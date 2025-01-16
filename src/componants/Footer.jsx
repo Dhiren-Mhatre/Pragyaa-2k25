@@ -1,0 +1,199 @@
+import React from 'react';
+import { motion } from 'framer-motion';
+import { FaInstagram, FaLinkedin, FaFacebook, FaTwitter, FaYoutube } from 'react-icons/fa';
+import pragyaaLogo from "../assets/pragyaa.png";
+import BackButton from '../EventPage/BackButton';
+import BackToTopButton from './BackToTop';
+// import './Footer.css';
+
+function cn(...classes) {
+  return classes.filter(Boolean).join(' ');
+}
+
+const BackgroundGradient = ({
+  children,
+  className,
+  containerClassName,
+  animate = true,
+}) => {
+  const variants = {
+    initial: {
+      backgroundPosition: '0 50%',
+    },
+    animate: {
+      backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'],
+    },
+  };
+
+  return (
+    <div className={cn('relative group', containerClassName)}>
+      <motion.div
+        variants={animate ? variants : undefined}
+        initial={animate ? 'initial' : undefined}
+        animate={animate ? 'animate' : undefined}
+        transition={
+          animate
+            ? {
+                duration: 30,
+                repeat: Infinity,
+                repeatType: 'loop',
+                ease: 'linear',
+              }
+            : undefined
+        }
+        style={{
+          backgroundSize: animate ? '400% 400%' : undefined,
+        }}
+        className={cn(
+          'absolute inset-0 rounded-3xl z-[1] opacity-60 group-hover:opacity-100 blur-xl transition duration-500',
+          'bg-[radial-gradient(circle_farthest-side_at_0_100%,#ff0000,transparent_50%),radial-gradient(circle_farthest-side_at_100%_0,#000000,transparent_50%),radial-gradient(circle_farthest-side_at_100%_100%,#ff0000,transparent_50%),radial-gradient(circle_farthest-side_at_0_0,#000000,transparent_50%)]'
+        )}
+      />
+      <div className={cn('relative z-10', className)}>{children}</div>
+    </div>
+  );
+};
+
+const Footer = () => {
+  return (
+    <BackgroundGradient>
+      <footer className="bg-black/80 text-white backdrop-blur-sm rounded-3xl ">
+        <div className="max-w-7xl mx-auto py-9 px-7 ">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-30">
+            {/* Logo Section */}
+            <div className="px-4 flex flex-col items-center md:items-start">
+              <img 
+                src={pragyaaLogo} 
+                alt="PRAGYAA 2025" 
+                className="w-20 h-20 object-contain mb-3"
+              />
+              <p className="text-sm text-gray-400 text-center md:text-left">
+                Annual Technical Festival of SGGSIET
+              </p>
+            </div>
+
+            {/* Quick Links */}
+            <div className="space-y-4 px-10 hidden md:block ">
+              <h3 className="text-2xl font-extrabold text-red-500 text-center md:text-left">Quick Links</h3>
+              <nav className="flex flex-col space-y-3">
+                <a 
+                  href="#guestbox" 
+                  className="text-gray-400 hover:text-white transition-colors duration-300"
+                >
+                  Events
+                </a>
+                <a 
+                  href="#schedule" 
+                  className="text-gray-400 hover:text-white transition-colors duration-300"
+                >
+                  Schedule
+                </a>
+                <a 
+                  href="#sponsors" 
+                  className="text-gray-400 hover:text-white transition-colors duration-300"
+                >
+                  Sponsors
+                </a>
+                <a 
+                  href="#about" 
+                  className="text-gray-400 hover:text-white transition-colors duration-300"
+                >
+                  About Us
+                </a>
+                <a 
+                  href="#register" 
+                  className="text-gray-400 hover:text-white transition-colors duration-300"
+                >
+                  Register
+                </a>
+              </nav>
+            </div>
+
+            {/* Contact Section */}
+            <div className="space-y-4 pr-10 pb-0 ">
+              <h3 className="text-2xl font-extrabold text-red-500 text-center md:text-left">Contact Us</h3>
+              <address className="text-gray-300 not-italic font-bold text-center md:text-left text-lg leading-relaxed">
+                <p>SGGSIET Campus</p>
+                <p>Nanded, Maharashtra</p>
+                <p>
+                  Email:{' '}
+                  <a
+                    href="mailto:pragyaa@sggsiet.ac.in"
+                    className="text-white"
+                  >
+                    pragyaa@sggsiet.ac.in
+                  </a>
+                </p>
+                <p>
+                  Student Coordinator:{' '}
+                  <span className="text-white">+91 XXXXXXXXXX</span>
+                </p>
+              </address>
+
+              <div className="flex justify-center md:justify-start space-x-4 mt-4">
+                <a
+                  href="https://www.instagram.com/sggspragyaa?igsh=YzljYTk1ODg3Zg=="
+                  target='_blank'
+                  aria-label="Instagram"
+                  className="group flex items-center justify-center w-10 h-10 rounded-full bg-transparent hover:bg-gradient-to-tr hover:from-yellow-400 hover:via-pink-500 hover:to-purple-600 border border-gray-600 transition-all duration-300 hover:scale-110"
+                >
+                  <FaInstagram className="w-5 h-5 text-gray-400 group-hover:text-white" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/pragyaa-sggs/"
+                  target='_blank'
+                  aria-label="LinkedIn"
+                  className="group flex items-center justify-center w-10 h-10 rounded-full bg-transparent hover:bg-[#0077B5] border border-gray-600 transition-all duration-300 hover:scale-110"
+                >
+                  <FaLinkedin className="w-5 h-5 text-gray-400 group-hover:text-white" />
+                </a>
+                <a
+                  href="#"
+                  target='_blank'
+                  aria-label="Facebook"
+                  className="group flex items-center justify-center w-10 h-10 rounded-full bg-transparent hover:bg-[#1877F2] border border-gray-600 transition-all duration-300 hover:scale-110"
+                >
+                  <FaFacebook className="w-5 h-5 text-gray-400 group-hover:text-white" />
+                </a>
+                <a
+                  href="#"
+                  target='_blank'
+                  aria-label="Twitter"
+                  className="group flex items-center justify-center w-10 h-10 rounded-full bg-transparent hover:bg-[#1DA1F2] border border-gray-600 transition-all duration-300 hover:scale-110"
+                >
+                  <FaTwitter className="w-5 h-5 text-gray-400 group-hover:text-white" />
+                </a>
+                <a
+                  href="https://youtube.com/@pragyaa-sggsiet7271?si=KAPSRifoQcXFM7bd"
+                  target='_blank'
+                  aria-label="YouTube"
+                  className="group flex items-center justify-center w-10 h-10 rounded-full bg-transparent hover:bg-[#FF0000] border border-gray-600 transition-all duration-300 hover:scale-110"
+                >
+                  <FaYoutube className="w-5 h-5 text-gray-400 group-hover:text-white" />
+                </a>
+              </div>
+              <br/><br/>
+              {/* <h2 style={{ alignItems: "center", textAlign: "center" }}>
+                  Shri Guru Gobind Singhji Institute of Engineering & Technology.
+              </h2>
+              <h6 style={{ alignItems: "center", textAlign: "center" }}>
+              Shri Guru Gobind Singhji Institute of Engineering and Technology, Vishnupuri, Nanded(Maharashtra State) INDIA PIN 431606.
+              </h6> */}
+
+            </div>
+          </div>
+
+          <div className="mt-2 pt-4 border-t border-gray-800 px-4">
+            <p className="text-center text-gray-400 font-medium">
+            Copyright © PRAGYAA 2025 All rights reserved | This website is made by PRAGYAA-2025 WEB TEAM. 
+            {/* <BackToTopButton/> */}
+            </p>
+          </div>
+        </div>
+       
+      </footer>
+    </BackgroundGradient>
+  );
+};
+
+export default Footer;

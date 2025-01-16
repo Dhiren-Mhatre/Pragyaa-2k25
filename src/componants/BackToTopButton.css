@@ -1,0 +1,42 @@
+.back-to-top-button {
+  position: fixed;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  width: 2.5rem; /* Set equal width and height for a circular shape */
+  height: 2.5rem; 
+  background-color: #680c0cad;
+  color: white;
+  border: none;
+  border-radius: 50%; /* Ensures the button is a perfect circle */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  display: flex; /* Center content inside the button */
+  justify-content: center; 
+  align-items: center;
+}
+
+.back-to-top-button:hover {
+  background-color: #eb2825;
+  box-shadow: 0px 6px 6px rgba(194, 88, 88, 0.932);
+}
+
+@media (max-width: 1020px) {
+  .back-to-top-button {
+    bottom: 1rem;
+    right: 1rem;
+    width: 3rem; /* Adjust size for smaller screens */
+    height: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .back-to-top-button {
+    bottom: 0.9rem;
+    right: 0.9rem;
+    width: 2.8rem; 
+    height: 2.8rem;
+    font-size: 0.975rem;
+    
+  }
+}

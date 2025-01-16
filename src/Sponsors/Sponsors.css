@@ -1,0 +1,121 @@
+.sponsors-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem;
+  background: transparent;
+}
+
+.heading h1 {
+  font-size: 2.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #d8c5c5;
+  margin-bottom: 3rem;
+}
+
+.sponsor-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+
+.sponsor-card {
+  background: #b0afaf;
+  border: 1px solid #e0e0e0;
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  aspect-ratio: 1; 
+}
+
+.sponsor-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.sponsor-logo {
+  max-width: 50%;
+  height: auto; 
+  margin: 0 auto 10px;
+}
+
+.sponsor-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 10px 0;
+  color: #444444;
+}
+
+.sponsor-description {
+  font-size: 0.9rem;
+  color: #666666;
+}
+
+
+@media (max-width: 1200px) {
+  .sponsor-cards {
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .sponsors-container {
+    padding: 3rem 1rem;
+  }
+
+  .heading h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .sponsor-cards {
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 1rem;
+  }
+
+  .sponsor-card {
+    padding: 1rem;
+  }
+
+  .sponsor-name {
+    font-size: 1rem;
+  }
+
+  .sponsor-description {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading h1 {
+    font-size: 1.8rem;
+  }
+
+  .sponsor-cards {
+    grid-template-columns: 1fr; 
+    gap: 1rem;
+  }
+
+  .sponsor-logo {
+    max-width: 60px;
+  }
+
+  .sponsor-name {
+    font-size: 0.9rem;
+  }
+
+  .sponsor-description {
+    font-size: 0.8rem;
+  }
+}
