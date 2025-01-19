@@ -23,7 +23,10 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
   width: 100vw;
-  
+}
+
+.about-container{
+  position: relative;
 }
 
 .well {
@@ -100,13 +103,12 @@ video {
 
 #astronaut {
   position: absolute;
-  right: 16.5vw;
-  /* width: 11rem; */
+  right: 11vw;
   height: auto;
-  top: 9vh;
+  top: 1vh;
   margin: auto;
   z-index: 3;
-  /* animation: astronaut 2s ease-in-out infinite alternate; */
+  animation: astronaut 4s ease-in-out infinite alternate;
 }
 
 @keyframes astronaut {
@@ -114,7 +116,7 @@ video {
     transform: translateY(0%);
   }
   to {
-    transform: translateY(15%);
+    transform: translateY(20%);
   }
 }
 
@@ -170,17 +172,27 @@ video {
 .about-text {
   color: white;
   font-size: 1.2rem;
-  margin: 8% 10%;
+  margin: 9% 8%;
+  padding-top: 1.5rem;
 }
 
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
   .card {
     display: block;
   }
   .about-box h1{
     font-family: 10px;
   }
-}
+  #astronaut {
+    position: absolute;
+    right: 11vw;
+    height: auto;
+    top: 1vh;
+    margin: auto;
+    z-index: 3;
+    animation: astronaut 4s ease-in-out infinite alternate;
+  }
+} */
 
 
 @media only screen and (max-width: 1020px) {
@@ -196,15 +208,68 @@ video {
       font-size: 3rem;
       color: #fff;
   }
+  #astronaut{
+    position: absolute;
+    right: 12vw;
+    height: auto;
+    top: 7vh;
+    margin: auto;
+    z-index: 3;
+    animation: astronaut 4s ease-in-out infinite alternate;
+  }
 }
 
 
 @media (max-width: 1200px) {
   .about-text {
-    padding-top: 2.5rem;
-      font-weight: bold;
-      font-size: 1.1rem;
+    padding-top: 1.5rem;
+      /* font-weight: bold; */
+      font-size: 1rem;
       color: #fff;
+  }
+  body{
+    margin: 0;
+    padding: 0;
+  };
+}
+
+@media (max-width: 900px) {
+  .about-text {
+      /* font-weight: bold; */
+      padding-top: 4rem;
+      font-size: 1rem;
+      color: #fff;
+  }
+  #astronaut{
+    position: absolute;
+    right: 10vw;
+    height: auto;
+    top: 7vh;
+    margin: auto;
+    z-index: 3;
+    animation: astronaut 4s ease-in-out infinite alternate;
+  }
+  body{
+    margin: 0;
+    padding: 0;
+  };
+}
+
+@media (max-width: 700px) {
+  .about-text {
+      /* font-weight: bold; */
+      padding-top: 4rem;
+      font-size: 1rem;
+      color: #fff;
+  }
+  #astronaut{
+    position: absolute;
+    right: 6.6vw;
+    height: auto;
+    top: 7vh;
+    margin: auto;
+    z-index: 3;
+    animation: astronaut 4s ease-in-out infinite alternate;
   }
   body{
     margin: 0;
@@ -218,6 +283,15 @@ video {
       padding-top: 4rem;
       font-size: 1rem;
       color: #fff;
+  }
+  #astronaut{
+    position: absolute;
+    right: 3.5vw;
+    height: auto;
+    top: 6vh;
+    margin: auto;
+    z-index: 3;
+    animation: astronaut 4s ease-in-out infinite alternate;
   }
   body{
     margin: 0;

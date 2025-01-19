@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  /* background-color: black; */
+  background: black;  
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
   padding: 0;
@@ -92,6 +92,7 @@ body {
   transform: translateY(-50%);
   transition: transform 0.3s;
   gap: 1rem;
+  color: rgb(236, 96, 53);
 }
 
 details[open] .faq__summary:after {
@@ -99,15 +100,17 @@ details[open] .faq__summary:after {
 }
 
 .faq__question {
-  font-weight: 600;
-  font-size: 1rem;
+  /* font-weight: 600; */
+  font-size: 1.3rem;
+  line-height: 0.9;
 }
 
 .faq__text {
-  font-size: 1rem;
-  line-height: 1.8;
-  color: hsla(240, 3%, 42%, 0.992);
-  margin-top: 0.6rem;
+  font-size: 1.1rem;
+  line-height: 1.1;
+  color: hsla(0, 0%, 99%, 0.992);
+  margin-top: 0.7rem;
+  margin-left: 1.6rem;
 }
 
 .hidden-lg {
@@ -185,7 +188,7 @@ details[open] .faq__summary:after {
   }
 
   .faq__heading {
-    font-size: 7rem;
+    font-size: 5rem;
   }
 
   .faq__holder {
@@ -197,8 +200,8 @@ details[open] .faq__summary:after {
   }
 
   .faq__text {
-    font-size: 1.2rem;
-    line-height: 1.2;
+    font-size: 0.9rem;
+    line-height: 1.5;
   }
 
   /* .faq__detail {

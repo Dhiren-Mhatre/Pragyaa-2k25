@@ -1,7 +1,7 @@
 import React from 'react';
 import Clock from './Clock';
 import pragyan from '../assets/pragyan.png';
-import './Contentbox.css'; // Import the CSS file
+import './ContentBox.css';
 
 const ContentBox = () => {
   return (
@@ -17,7 +17,7 @@ const ContentBox = () => {
             21<b>TH</b> 22<b>TH</b> 23<b>TH</b>
           </span>
           <span className="date-year">
-            2025 <span>February</span>
+            2025 February
           </span>
         </div>
         <Clock />

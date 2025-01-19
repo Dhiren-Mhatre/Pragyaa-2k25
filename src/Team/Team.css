@@ -1,21 +1,14 @@
+body{
+  background-image: url('C:/Users/hp/Downloads/Main Pragyaa 2k25/Event Page Main/Event Page Main/src/SchedulePage/photo.jpg');
 
-.social-links {
-  display: flex;
-  font-size: 20px;
-  justify-content: space-evenly;
 }
-.insta:hover{
-  color: rgb(255, 0, 251);
-  font-size: 21px;
+
+.home-container {
+  position: relative;
+  z-index: 1000;
+  padding-top: 80px; 
 }
-.linkedin:hover{
-  color: #0077b5;
-  font-size: 21px;
-}
-.email:hover{
-  color: #b5000f;
-  font-size: 21px;
-}
+
 
 .profile-card {
   position: relative;
@@ -25,24 +18,54 @@
   padding: 15px;
   border-radius: 50%;
   box-shadow: -5px 8px 45px rgba(51, 51, 51, 0.126);
-  transition: all .4s;
+  transition: all 0.4s;
   margin: 0 20px;
+  z-index: -1000;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
-a {
-  color: #ffffff;
-}
-
-.profile-card:hover {
-  border-radius: 10px;
-  height: 260px;
-}
-
+/* Image Container */
 .profile-card .img {
   position: relative;
   width: 100%;
   height: 100%;
   background-color: transparent;
+  /* z-index: -1; */
+}
+
+.img img {
+  object-fit: fill;
+  width: 100%;
+  border-radius: 50%;
+  transition: all 0.4s;
+  /* z-index: 1003; */
+}
+
+/* Caption Section */
+.caption {
+  text-align: center;
+  transform: translateY(-90px);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s;
+  /* z-index: 1004; */
+  position: relative;
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  font-size: 20px;
+  justify-content: space-evenly;
+  position: relative;
+  z-index: -1;
+}
+
+/* Hover States */
+.profile-card:hover {
+  border-radius: 10px;
+  height: 260px;
 }
 
 .profile-card:hover img {
@@ -50,37 +73,54 @@ a {
   transform: translateY(-70px);
 }
 
-.img img {
-  object-fit: fill;
-  width: 100%;
-  border-radius: 50%;
-  transition: all .4s;
-  z-index: 99;
-}
-
-.caption {
-  text-align: center;
-  transform: translateY(-90px);
-  opacity: 0;
-  pointer-events: none;
-  transition: all .5s;
-}
-
 .profile-card:hover .caption {
   opacity: 1;
   pointer-events: all;
 }
 
+/* Social Icons Hover Effects */
+.insta:hover {
+  color: rgb(255, 0, 251);
+  font-size: 21px;
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+.linkedin:hover {
+  color: #0077b5;
+  font-size: 21px;
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+.email:hover {
+  color: #b5000f;
+  font-size: 21px;
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+/* Links */
+a {
+  color: #ffffff;
+  text-decoration: none;
+  position: relative;
+  /* z-index: 1006; */
+}
+
+/* Caption Styles */
 .caption h3 {
   font-size: 21px;
   color: #ffffff;
   font-weight: 600;
+  margin-bottom: 8px;
 }
 
 .caption p {
   font-size: 15px;
   font-weight: 500;
   margin: 2px 0 12px 0;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .caption .social-links i {
@@ -88,7 +128,7 @@ a {
   margin: 0 3px;
   cursor: pointer;
   color: #ffffff;
-  transition: all .4s;
+  transition: all 0.4s;
 }
 
 .caption .social-links i:hover {
@@ -97,16 +137,64 @@ a {
 
 @media (max-width: 768px) {
   .home-container {
-      display: flex;
-      flex-direction: column;
-      height: auto;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly; 
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+    padding-top: 60px; 
+    z-index: -1000;
   }
 
   .profile-card {
-      margin-top: 45px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%; 
+    max-width: 250px; 
   }
 
-  .main1, .main {
-      font-size: 20px;
+  .main1, 
+  .main {
+    font-size: 20px;
   }
+}
+
+@media (max-width: 5000px) {
+  .home-container {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly; 
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+    padding-top: 60px; 
+    z-index: -1000;
+  }
+
+  .profile-card {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%; 
+    max-width: 250px; 
+  }
+
+  .main1, 
+  .main {
+    font-size: 20px;
+  }
+}
+
+/* Animation Background Compatibility */
+.background-squares {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-mobile.open {
+  z-index: 1000;
 }

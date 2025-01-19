@@ -4,7 +4,7 @@ import { FaInstagram, FaLinkedin, FaFacebook, FaTwitter, FaYoutube } from 'react
 import pragyaaLogo from "../assets/pragyaa.png";
 import BackButton from '../EventPage/BackButton';
 import BackToTopButton from './BackToTop';
-// import './Footer.css';
+import './Footer.css';
 
 function cn(...classes) {
   return classes.filter(Boolean).join(' ');
@@ -58,23 +58,24 @@ const Footer = () => {
   return (
     <BackgroundGradient>
       <footer className="bg-black/80 text-white backdrop-blur-sm rounded-3xl ">
-        <div className="max-w-7xl mx-auto py-9 px-7 ">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-30">
+        <div className="max-w-7xl mx-auto py-3 px-7 ">
+          <div className="grid grid-cols-1 md:grid-cols-3 md:gap-0">
             {/* Logo Section */}
-            <div className="px-4 flex flex-col items-center md:items-start">
+            <div className="px-2 flex flex-col items-center md:items-start">
               <img 
                 src={pragyaaLogo} 
                 alt="PRAGYAA 2025" 
-                className="w-20 h-20 object-contain mb-3"
+                className="w-24 h-24 object-contain mb-3" 
               />
-              <p className="text-sm text-gray-400 text-center md:text-left">
+              <p className="text-xl text-gray-400 text-center md:text-left">
                 Annual Technical Festival of SGGSIET
               </p>
             </div>
 
+
             {/* Quick Links */}
             <div className="space-y-4 px-10 hidden md:block ">
-              <h3 className="text-2xl font-extrabold text-red-500 text-center md:text-left">Quick Links</h3>
+              <h3 className="text-2xl font-extrabold text-red-500 text-start md:text-left">Quick Links</h3>
               <nav className="flex flex-col space-y-3">
                 <a 
                   href="#guestbox" 
@@ -110,23 +111,28 @@ const Footer = () => {
             </div>
 
             {/* Contact Section */}
-            <div className="space-y-4 pr-10 pb-0 ">
+            <div className="space-y-4 pr-10 -
+            pb-5 ">
               <h3 className="text-2xl font-extrabold text-red-500 text-center md:text-left">Contact Us</h3>
-              <address className="text-gray-300 not-italic font-bold text-center md:text-left text-lg leading-relaxed">
+              <address className="text-gray-500 text-center flex-row pr-1  space-y-0 text-sm-1 flex not-italic sm:text-start leading-snug">
                 <p>SGGSIET Campus</p>
                 <p>Nanded, Maharashtra</p>
                 <p>
                   Email:{' '}
                   <a
                     href="mailto:pragyaa@sggsiet.ac.in"
-                    className="text-white"
+                    className="text-gray-500 "
                   >
-                    pragyaa@sggsiet.ac.in
+                    
+                    <a href="pragyaa@sggsiet.ac.in" className="email-link text-sm text-blue-500">pragyaa@sggsiet.ac.in</a>
                   </a>
                 </p>
                 <p>
                   Student Coordinator:{' '}
-                  <span className="text-white">+91 XXXXXXXXXX</span>
+                  <a
+                    href="technicalsecretary@sggs.ac.in"
+                    className="text-gray-500 email-link"
+                  >technicalsecretary@sggs.ac.in</a>
                 </p>
               </address>
 
@@ -148,7 +154,7 @@ const Footer = () => {
                   <FaLinkedin className="w-5 h-5 text-gray-400 group-hover:text-white" />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.facebook.com/sggspragyaa"
                   target='_blank'
                   aria-label="Facebook"
                   className="group flex items-center justify-center w-10 h-10 rounded-full bg-transparent hover:bg-[#1877F2] border border-gray-600 transition-all duration-300 hover:scale-110"
@@ -156,7 +162,7 @@ const Footer = () => {
                   <FaFacebook className="w-5 h-5 text-gray-400 group-hover:text-white" />
                 </a>
                 <a
-                  href="#"
+                  href="https://x.com/i/flow/login?redirect_after_login=%2Fsggspragyaa"
                   target='_blank'
                   aria-label="Twitter"
                   className="group flex items-center justify-center w-10 h-10 rounded-full bg-transparent hover:bg-[#1DA1F2] border border-gray-600 transition-all duration-300 hover:scale-110"
@@ -183,12 +189,12 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="mt-2 pt-4 border-t border-gray-800 px-4">
-            <p className="text-center text-gray-400 font-medium">
-            Copyright © PRAGYAA 2025 All rights reserved | This website is made by PRAGYAA-2025 WEB TEAM. 
-            {/* <BackToTopButton/> */}
-            </p>
-          </div>
+           <div className="pt-4 pb-2 border-t border-gray-800 px-4">
+          <p className="text-center text-gray-400 text-sm">
+            Copyright © PRAGYAA 2025 All rights reserved | This website is made by PRAGYAA-2025
+            WEB TEAM.
+          </p>
+        </div>
         </div>
        
       </footer>

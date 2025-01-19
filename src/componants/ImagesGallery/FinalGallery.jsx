@@ -26,7 +26,7 @@ const FinalGallery = () => {
         speed="normal"    
         background = "cover"    
         pauseOnHover={true}    
-        imageWidth={isMobile ? 350 : 500} 
+        imageWidth={isMobile ? 350 : 450} 
         imageHeight={isMobile ? 200 : 300}     
       />
     </div>

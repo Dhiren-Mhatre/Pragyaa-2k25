@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./SchedulePage.css";
 import Squares from '../Background/Squares';
 import SplashCursor from '../Curser/SplashCursor';
+// import photo from './photo.jpg';
 
 const SchedulePage = () => {
   const [activeDay, setActiveDay] = useState(1);

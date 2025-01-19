@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import "./Navbar.css";
 import PragyaaLogo from "../assets/pragyaa.png";
-import MenuIcon from "../assets/menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png"; // Include the uploaded icon
+import MenuIcon from "../assets/menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png"; 
 import { scroller } from "react-scroll";
 import Squares from '../Background/Squares';
+import Team from "../Team/Team";
+
 const Header = ({ isHomePage }) => {
   const navigate = useNavigate();
   const location = useLocation();
@@ -22,16 +24,13 @@ const Header = ({ isHomePage }) => {
     }
 
     if (location.pathname === "/" && sectionId) {
-      // If we're on the home page and have a section ID, just scroll
       scroller.scrollTo(sectionId, { smooth: true, duration: 200 });
     } else if (path === "/" && sectionId) {
-      // If we're navigating to home with a section ID, navigate then scroll
       navigate(path);
       setTimeout(() => {
         scroller.scrollTo(sectionId, { smooth: true, duration: 200 });
       }, 100);
     } else {
-      // For other routes, just navigate
       navigate(path);
     }
 
@@ -43,10 +42,9 @@ const Header = ({ isHomePage }) => {
     <div className="nav" style={{ whiteSpace: "nowrap" }}>
       <nav id="navbar" className="navbar">
         <div id="logo" className="me-auto">
-        <button
-              onClick={() => handleNavigation("/", "contentBox")}
-            >
-              <img src={PragyaaLogo} alt="Pragyaa Logo" style={{ height: "5rem" }} />
+            <button onClick={() => handleNavigation("/", "contentBox")}>
+
+              <img src={PragyaaLogo} className="logo" alt="Pragyaa Logo" style={{ height: "5rem" }} />
             </button>
           
         </div>
@@ -129,7 +127,7 @@ const Header = ({ isHomePage }) => {
           alt="Menu Icon"
           onClick={toggleMenu}
         />
-        {!isHomePage && (
+        {/* {!isHomePage && (
         <div className="background-squares">
           <Squares
             speed={0.5}
@@ -139,7 +137,7 @@ const Header = ({ isHomePage }) => {
             hoverFillColor='#ff0000'
           />
         </div>
-      )}
+      )} */}
       </nav>
 
       {/* Mobile Menu - Dropdown */}
@@ -163,6 +161,14 @@ const Header = ({ isHomePage }) => {
               ABOUT US
             </a>
           </li>
+          {/* <li>
+            <a
+              className="nav-link scrollto"
+              onClick={() => handleNavigation("/about")}
+            >
+              ABOUT US
+            </a>
+          </li> */}
           <li>
             <a
               className="nav-link scrollto"
@@ -173,9 +179,8 @@ const Header = ({ isHomePage }) => {
           </li>
           <li>
             <a
-              className="nav-link scrollto"
-              href="#guestbox"
-              onClick={() => handleNavigation("/", "guestbox")}
+              className="nav-item nav-link"
+              onClick={() => handleNavigation("/team")}
             >
               TEAM
             </a>
@@ -220,13 +225,13 @@ const Header = ({ isHomePage }) => {
             <a
               className="nav-link scrollto"
               href="#map"
-              onClick={() => handleNavigation("/", "map")}
+              onClick={() => handleNavigation("/", "contact")}
             >
               CONTACT
             </a>
           </li>
         </ul>
-        {!isHomePage && (
+        {/* {!isHomePage && (
         <div className="background-squares">
           <Squares
             speed={0.5}
@@ -236,7 +241,7 @@ const Header = ({ isHomePage }) => {
             hoverFillColor='#ff0000'
           />
         </div>
-      )}
+      )} */}
       </nav>
     </div>
   );

@@ -16,7 +16,7 @@ function About() {
               id="astronaut" 
               alt="Astronaut" 
               src={Invert_T} 
-              style={{ width: '6rem', animation: 'float 3s ease-in-out infinite', margin: '0' }} 
+              style={{ width: '11rem', animation: 'float 4s ease-in-out infinite', margin: '0' }} 
             />
             {/* <img id="planet" alt="Planet" src={Invert} style={{ margin: '0' }} /> */}
 

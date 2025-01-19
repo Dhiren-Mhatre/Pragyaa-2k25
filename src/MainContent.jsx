@@ -7,12 +7,12 @@ import FAQPage from "./Faq/Faq";
 import Map from "./componants/Map";
 import About from "./About/About";
 import Navbar from "./Navbar/Navbar";
-import Home from "./pages/Home/Home";
-// import "./App.css";
+  import Home from "./pages/Home/Home";
+  // import "./App.css";
 import { scroller } from "react-scroll";
 import BackToTopButton from "./componants/BackToTop";
 import Sponsors from "./Sponsors/Sponsore";
-import SchedulePage from "./SchedulePage/SchedulePage";
+// import SchedulePage from "./SchedulePage/SchedulePage";
 // import Event from "./EventPage";
 import Footer from "./componants/Footer";
 import EventRoutes from "./EventPage/EventRoutes";
@@ -28,13 +28,11 @@ const MainContent = () => {
           <div id="contentBox"><ContentBox /></div>
           <div id="about"><About /></div>
           {/* <div id="guestbox"><EventRoutes /></div> */}
-          {/* <div id="team"><Team/></div> */}
           <div id="guestbox"><GuestBox /></div>
           <div id="gallery"><FinalGallery /></div>
           <div id="sponsors"><Sponsors /></div>
           <div id="faqs"><FAQPage /></div>
           <div id="map"><Map /></div>
-          {/* <div id="footer"><Footer /></div> */}
         </div>
       </>
     );

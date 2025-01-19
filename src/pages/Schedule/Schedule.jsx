@@ -65,7 +65,7 @@ export default function Schedule() {
               >
                 <h3
                   className="vertical-timeline-element-title"
-                  style={{ fontFamily: "sans-serif" }}
+                  style={{ fontFamily: "BatmanForever" }}
                 >
                   {elem.role}
                 </h3>
