@@ -5,7 +5,7 @@ import "./Clock.css";
 function Clock() {
   return (
     <div className="clock-container">
-      {/* Countdown Timer */}
+      
       <div className="countdown-box">
         <Countdown
           date={new Date("2025-02-22T00:00:00")}
