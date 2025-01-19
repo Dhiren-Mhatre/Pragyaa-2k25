@@ -122,17 +122,17 @@ const Footer = () => {
                 <p>
                   Email:{' '}
                   <a
-                    href="mailto:pragyaa@sggsiet.ac.in"
+              
                     className="text-gray-500 "
                   >
                     
-                    <a href="pragyaa@sggsiet.ac.in" className="email-link text-sm text-blue-500">pragyaa@sggsiet.ac.in</a>
+                    <a  className="email-link text-sm text-blue-500">pragyaa@sggsiet.ac.in</a>
                   </a>
                 </p>
                 <p>
                   Student Coordinator:{' '}
                   <a
-                    href="technicalsecretary@sggs.ac.in"
+                    
                     className="text-gray-500 email-link"
                   >technicalsecretary@sggs.ac.in</a>
                 </p>

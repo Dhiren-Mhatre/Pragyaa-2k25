@@ -1,5 +1,3 @@
-
-
 @keyframes scroll {
   from {
     transform: translateX(0);
@@ -16,6 +14,3 @@
 .animate-scroll {
   animation: scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite;
 }
-
-
-
