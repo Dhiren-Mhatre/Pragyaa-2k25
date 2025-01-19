@@ -22,7 +22,10 @@ body {
   position: relative;
   z-index: 9999;
 }
-
+.nav.hidden {
+  transform: translateY(-100%);
+  transition: transform 0.3s ease;
+}
 .background-squares {
   position: absolute;
   top: 0;
@@ -34,11 +37,22 @@ body {
 
 .navbar-nav {
   list-style: none;
+  font-size: larger;
   display: flex;
+  transform: translateY(-10px);
   align-items: center;
   transition: max-height 0.3s ease, opacity 0.3s ease;
 }
+.logo {
+  height: 5rem;
+}
 
+/* Mobile style */
+@media (max-width: 768px) {
+  .logo {
+    height: 20rem; /* Adjust height for mobile devices */
+  }
+}
 .navbar-nav.open {
   max-height: 300px;
   opacity: 1;

@@ -9,6 +9,7 @@ import Team from "./Team/Team";
 // import SplashCursor from "./Curser/SplashCursor"
 import About from "./About/About";
 import './styles/loadingStyles.css';
+import SplashCursor from "./Curser/SplashCursor";
 // import Contact from "./ContactPage/Contact";
 
 
@@ -60,7 +61,7 @@ const AppContent = () => {
 
   return (
     <>
-    {/* <SplashCursor /> */}
+    <SplashCursor/>
       <Navbar isHomePage={location.pathname === '/'} />
       <Routes>
         <Route path="*" element={<MainContent />} />

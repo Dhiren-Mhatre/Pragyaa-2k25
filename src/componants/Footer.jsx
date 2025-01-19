@@ -62,11 +62,13 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 md:gap-0">
             {/* Logo Section */}
             <div className="px-2 flex flex-col items-center md:items-start">
-              <img 
-                src={pragyaaLogo} 
-                alt="PRAGYAA 2025" 
-                className="w-24 h-24 object-contain mb-3" 
-              />
+             
+<img 
+  src={pragyaaLogo} 
+  alt="PRAGYAA 2025" 
+  className="h-80  w-80 mb-3" 
+/>
+ 
               <p className="text-xl text-gray-400 text-center md:text-left">
                 Annual Technical Festival of SGGSIET
               </p>

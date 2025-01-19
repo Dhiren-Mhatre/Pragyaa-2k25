@@ -1,7 +1,7 @@
 import React from 'react';
 import Clock from './Clock';
 import pragyan from '../assets/pragyan.png';
-import './ContentBox.css';
+import './Contentbox.css';
 
 const ContentBox = () => {
   return (

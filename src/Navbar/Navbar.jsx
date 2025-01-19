@@ -1,16 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import "./Navbar.css";
 import PragyaaLogo from "../assets/pragyaa.png";
-import MenuIcon from "../assets/menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png"; 
+import MenuIcon from "../assets/menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png";
 import { scroller } from "react-scroll";
-import Squares from '../Background/Squares';
+import Squares from "../Background/Squares";
 import Team from "../Team/Team";
 
 const Header = ({ isHomePage }) => {
   const navigate = useNavigate();
   const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrollDirection, setScrollDirection] = useState("up");
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
@@ -37,23 +38,41 @@ const Header = ({ isHomePage }) => {
     setMenuOpen(false);
   };
 
+  useEffect(() => {
+    let lastScrollY = window.scrollY;
+
+    const handleScroll = () => {
+      if (window.scrollY > lastScrollY) {
+        setScrollDirection("down");
+      } else {
+        setScrollDirection("up");
+      }
+      lastScrollY = window.scrollY;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    
-    <div className="nav" style={{ whiteSpace: "nowrap" }}>
+    <div className={`nav ${scrollDirection === "down" ? "hidden" : ""}`} style={{ whiteSpace: "nowrap" }}>
       <nav id="navbar" className="navbar">
         <div id="logo" className="me-auto">
-            <button onClick={() => handleNavigation("/", "contentBox")}>
-
-              <img src={PragyaaLogo} className="logo" alt="Pragyaa Logo" style={{ height: "5rem" }} />
-            </button>
-          
+          <button onClick={() => handleNavigation("/", "contentBox")}>
+            <img
+              src={PragyaaLogo}
+              className="logo"
+              alt="Pragyaa Logo"
+              style={{ height: "7rem" }}
+            />
+          </button>
         </div>
 
         {/* Desktop Navigation Menu */}
         <ul className={`navbar-nav ${menuOpen ? "open" : ""}`}>
-          {/* <li>
-            
-          </li> */}
           <li>
             <button
               className="nav-item nav-link"
@@ -127,17 +146,6 @@ const Header = ({ isHomePage }) => {
           alt="Menu Icon"
           onClick={toggleMenu}
         />
-        {/* {!isHomePage && (
-        <div className="background-squares">
-          <Squares
-            speed={0.5}
-            squareSize={70}
-            direction='diagonal' // up, down, left, right, diagonal
-            borderColor='#ff0000'
-            hoverFillColor='#ff0000'
-          />
-        </div>
-      )} */}
       </nav>
 
       {/* Mobile Menu - Dropdown */}
@@ -161,14 +169,6 @@ const Header = ({ isHomePage }) => {
               ABOUT US
             </a>
           </li>
-          {/* <li>
-            <a
-              className="nav-link scrollto"
-              onClick={() => handleNavigation("/about")}
-            >
-              ABOUT US
-            </a>
-          </li> */}
           <li>
             <a
               className="nav-link scrollto"
@@ -231,17 +231,6 @@ const Header = ({ isHomePage }) => {
             </a>
           </li>
         </ul>
-        {/* {!isHomePage && (
-        <div className="background-squares">
-          <Squares
-            speed={0.5}
-            squareSize={70}
-            direction='diagonal' // up, down, left, right, diagonal
-            borderColor='#ff0000'
-            hoverFillColor='#ff0000'
-          />
-        </div>
-      )} */}
       </nav>
     </div>
   );

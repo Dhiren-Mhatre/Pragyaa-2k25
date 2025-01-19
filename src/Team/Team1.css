@@ -1,18 +1,28 @@
-  .background-squares {
+.team-background {
+  background-image: url('./photo.jpg');
+  background-size: cover;
+  background-position: contain;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+}
+.background-squares {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1000;
+    /* z-index: -1000; */
   }
   
   .team-page {
     position: relative;
-    z-index: 10000;
+    /* z-index: 10000; */
   }
   
   .team-page .flex {
     position: relative;
-    z-index: 2;
+    /* z-index: 2; */
   }
+
+  

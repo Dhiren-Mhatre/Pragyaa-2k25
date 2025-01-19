@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./SchedulePage.css";
 import Squares from '../Background/Squares';
-import SplashCursor from '../Curser/SplashCursor';
+// import SplashCursor from '../Curser/SplashCursor';
 // import photo from './photo.jpg';
 
 const SchedulePage = () => {
@@ -40,7 +40,7 @@ const SchedulePage = () => {
 
   return (
     <>
-    <SplashCursor/>
+    {/* <SplashCursor/> */}
     <Squares
         speed={0.5}
         squareSize={70}

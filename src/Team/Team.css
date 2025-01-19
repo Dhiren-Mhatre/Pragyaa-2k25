@@ -1,11 +1,8 @@
-body{
-  background-image: url('C:/Users/hp/Downloads/Main Pragyaa 2k25/Event Page Main/Event Page Main/src/SchedulePage/photo.jpg');
 
-}
 
 .home-container {
   position: relative;
-  z-index: 1000;
+  /* z-index: 1000; */
   padding-top: 80px; 
 }
 
@@ -15,12 +12,13 @@ body{
   width: 220px;
   height: 220px;
   background-color: #5252522d;
-  padding: 15px;
+  padding: 34px;
   border-radius: 50%;
   box-shadow: -5px 8px 45px rgba(51, 51, 51, 0.126);
   transition: all 0.4s;
-  margin: 0 20px;
-  z-index: -1000;
+  margin: 20px;
+  z-index: 1000;
+  gap:3rem;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 }
@@ -28,6 +26,7 @@ body{
 /* Image Container */
 .profile-card .img {
   position: relative;
+  margin-bottom: 5px;
   width: 100%;
   height: 100%;
   background-color: transparent;
