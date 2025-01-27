@@ -2,8 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaInstagram, FaLinkedin, FaFacebook, FaTwitter, FaYoutube } from 'react-icons/fa';
 import pragyaaLogo from "../assets/pragyaa.png";
-import BackButton from '../EventPage/BackButton';
-import BackToTopButton from './BackToTop';
 import './Footer.css';
 
 function cn(...classes) {
@@ -62,18 +60,15 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 md:gap-0">
             {/* Logo Section */}
             <div className="px-2 flex flex-col items-center md:items-start">
-             
-<img 
-  src={pragyaaLogo} 
-  alt="PRAGYAA 2025" 
-  className="h-80  w-80 mb-3" 
-/>
- 
+              <img 
+                src={pragyaaLogo} 
+                alt="PRAGYAA 2025" 
+                className="h-80 w-80 mb-3" 
+              />
               <p className="text-xl text-gray-400 text-center md:text-left">
-                Annual Technical Festival of SGGSIET
+                National Level Annual Technical Festival of SGGSIET
               </p>
             </div>
-
 
             {/* Quick Links */}
             <div className="space-y-4 px-10 hidden md:block ">
@@ -113,32 +108,32 @@ const Footer = () => {
             </div>
 
             {/* Contact Section */}
-            <div className="space-y-4 pr-10 -
-            pb-5 ">
+            <div className="space-y-4 pr-10 pb-5">
               <h3 className="text-2xl font-extrabold text-red-500 text-center md:text-left">Contact Us</h3>
-              <address className="text-gray-500 text-center flex-row pr-1  space-y-0 text-sm-1 flex not-italic sm:text-start leading-snug">
+              <address className="text-gray-500 text-center flex-row pr-1 space-y-0 text-sm flex not-italic sm:text-start leading-snug">
                 <p>SGGSIET Campus</p>
                 <p>Nanded, Maharashtra</p>
-                <p>
-                  Email:{' '}
+                  </address>
+                <p>Email:{' '}
                   <a
-              
-                    className="text-gray-500 "
+                    href="mailto:pragyaa@sggsiet.ac.in"
+                    className="email-link text-sm text-blue-500"
                   >
-                    
-                    <a  className="email-link text-sm text-blue-500">pragyaa@sggsiet.ac.in</a>
+                    pragyaa@sggsiet.ac.in
                   </a>
                 </p>
-                <p>
-                  Student Coordinator:{' '}
+                <p>Student Coordinator:{' '}
                   <a
-                    
-                    className="text-gray-500 email-link"
-                  >technicalsecretary@sggs.ac.in</a>
+                    href="mailto:technicalsecretary@sggs.ac.in"
+                    className="email-link text-sm text-blue-500"
+                  >
+                    technicalsecretary@sggs.ac.in
+                  </a>
                 </p>
-              </address>
 
+              {/* Social Media Links */}
               <div className="flex justify-center md:justify-start space-x-4 mt-4">
+                {/* Instagram */}
                 <a
                   href="https://www.instagram.com/sggspragyaa?igsh=YzljYTk1ODg3Zg=="
                   target='_blank'
@@ -147,6 +142,8 @@ const Footer = () => {
                 >
                   <FaInstagram className="w-5 h-5 text-gray-400 group-hover:text-white" />
                 </a>
+
+                {/* LinkedIn */}
                 <a
                   href="https://www.linkedin.com/company/pragyaa-sggs/"
                   target='_blank'
@@ -155,6 +152,8 @@ const Footer = () => {
                 >
                   <FaLinkedin className="w-5 h-5 text-gray-400 group-hover:text-white" />
                 </a>
+
+                {/* Facebook */}
                 <a
                   href="https://www.facebook.com/sggspragyaa"
                   target='_blank'
@@ -163,14 +162,19 @@ const Footer = () => {
                 >
                   <FaFacebook className="w-5 h-5 text-gray-400 group-hover:text-white" />
                 </a>
+
+                {/* Twitter */}
                 <a
                   href="https://x.com/i/flow/login?redirect_after_login=%2Fsggspragyaa"
                   target='_blank'
                   aria-label="Twitter"
-                  className="group flex items-center justify-center w-10 h-10 rounded-full bg-transparent hover:bg-[#1DA1F2] border border-gray-600 transition-all duration-300 hover:scale-110"
+                  className="group flex items-center justify-center w-10 h-10 rounded-full bg-transparent hover:bg-[#1DA1F2] border border-gray-600 transition-all duration...
+-300 hover:scale-110"
                 >
                   <FaTwitter className="w-5 h-5 text-gray-400 group-hover:text-white" />
                 </a>
+
+                {/* YouTube */}
                 <a
                   href="https://youtube.com/@pragyaa-sggsiet7271?si=KAPSRifoQcXFM7bd"
                   target='_blank'
@@ -180,25 +184,16 @@ const Footer = () => {
                   <FaYoutube className="w-5 h-5 text-gray-400 group-hover:text-white" />
                 </a>
               </div>
-              <br/><br/>
-              {/* <h2 style={{ alignItems: "center", textAlign: "center" }}>
-                  Shri Guru Gobind Singhji Institute of Engineering & Technology.
-              </h2>
-              <h6 style={{ alignItems: "center", textAlign: "center" }}>
-              Shri Guru Gobind Singhji Institute of Engineering and Technology, Vishnupuri, Nanded(Maharashtra State) INDIA PIN 431606.
-              </h6> */}
-
             </div>
           </div>
 
-           <div className="pt-4 pb-2 border-t border-gray-800 px-4">
-          <p className="text-center text-gray-400 text-sm">
-            Copyright © PRAGYAA 2025 All rights reserved | This website is made by PRAGYAA-2025
-            WEB TEAM.
-          </p>
+          {/* Footer Bottom Section */}
+          <div className="pt-4 pb-2 border-t border-gray-800 px-4">
+            <p className="text-center text-gray-400 text-sm">
+              Copyright © PRAGYAA 2025 All rights reserved | This website is made by PRAGYAA 2025 WEB TEAM.
+            </p>
+          </div>
         </div>
-        </div>
-       
       </footer>
     </BackgroundGradient>
   );
