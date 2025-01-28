@@ -109,11 +109,12 @@ const Footer = () => {
 
             {/* Contact Section */}
             <div className="space-y-4 pr-10 pb-5">
-              <h3 className="text-2xl font-extrabold text-red-500 text-center md:text-left">Contact Us</h3>
               <address className="text-gray-500 text-center flex-row pr-1 space-y-0 text-sm flex not-italic sm:text-start leading-snug">
                 <p>SGGSIET Campus</p>
                 <p>Nanded, Maharashtra</p>
                   </address>
+                  <div className='text-center'>
+              <h3 className="text-2xl font-extrabold text-red-500 text-center md:text-left">Contact Us</h3>
                 <p>Email:{' '}
                   <a
                     href="mailto:pragyaa@sggsiet.ac.in"
@@ -130,7 +131,7 @@ const Footer = () => {
                     technicalsecretary@sggs.ac.in
                   </a>
                 </p>
-
+                </div>
               {/* Social Media Links */}
               <div className="flex justify-center md:justify-start space-x-4 mt-4">
                 {/* Instagram */}
