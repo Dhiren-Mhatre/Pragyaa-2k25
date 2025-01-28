@@ -145,7 +145,7 @@ const SchedulePage = () => {
           background-color: #1c1f27;
           border-radius: 10px;
           padding: 10px;
-          margin: 0 auto;
+          margin: 1.5rem  ;
           box-shadow: 0 4px 10px rgba(191, 36, 36, 0.557);
         }
 

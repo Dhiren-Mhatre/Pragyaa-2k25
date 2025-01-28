@@ -6,7 +6,7 @@ const EventSection = () => {
     return (
         <Routes>
             <Route path="/" element={<CardGrid />} />
-            <Route path="/detail/:title" element={<DetailPage />} />
+            <Route path="/title" element={<DetailPage />} />
         </Routes>
     );
 }

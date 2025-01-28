@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './CardGrid.css';
-import BackButton from './BackButton';
+import './Card.css';
 import roboticImage from '../assets/robotic.jpeg';
 import iplImage from '../assets/ipl.jpeg';
 
@@ -16,11 +15,10 @@ const Fungame = () => {
 
   return (
     <div className="card-grid">
-      <BackButton />
       {cardsData.map((card, index) => (
         <Link
           key={index}
-          to={`/fungames/detail/${encodeURIComponent(card.title)}`}
+          to={`/events/fungames/${card.title}`}
         >
           <div className="card">
             <img src={card.image} alt={card.title} />

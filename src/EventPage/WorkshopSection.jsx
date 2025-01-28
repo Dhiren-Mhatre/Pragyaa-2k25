@@ -6,7 +6,7 @@ const WorkshopSection = () => {
     return (
         <Routes>
             <Route path="/" element={<Workshop />} />
-            <Route path="/detail/:title" element={<DetailWorkshop />} />
+            <Route path="/title" element={<DetailWorkshop />} />
         </Routes>
     );
 }

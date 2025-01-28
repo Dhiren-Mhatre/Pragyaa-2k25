@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-// import './DetailWorkshop.css';
+// import './DetailPage.css';
+import './DetailWorkshop.css'
 
 const DetailWorkshop = () => {
   const { title } = useParams();
@@ -38,18 +39,18 @@ const DetailWorkshop = () => {
   if (!workshop) return <div className="loading-message">Loading workshop details...</div>;
 
   return (
-    <div className="detail-page">
-      <div className="detail-content">
-        <h1 className="detail-title">{workshop.Title}</h1>
-        <div className="info-section">
+    <div className="detail-pages">
+      <div className="detail-contents">
+        <h1 className="detail-titles">{workshop.Title}</h1>
+        <div className="info-sections">
           <h2>Description</h2>
           <p>{workshop.Description}</p>
         </div>
-        <div className="info-section">
+        <div className="info-sections">
           <h2>Engineering Domains</h2>
           <p>{workshop['Engg Domains']}</p>
         </div>
-        <div className="info-section">
+        <div className="info-sections">
           <h2>Venue</h2>
           <p>{workshop.Venue_Location}</p>
         </div>

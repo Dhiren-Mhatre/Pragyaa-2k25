@@ -6,7 +6,7 @@ const FunGameSection = () => {
     return (
         <Routes>
             <Route path="/" element={<Fungame />} />
-            <Route path="/detail/:title" element={<DetailFungame />} />
+            <Route path="/title" element={<DetailFungame />} />
         </Routes>
     );
 }

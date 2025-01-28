@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './CardGrid.css';
-import BackButton from './BackButton';
+import './Card.css';
 import MegaQuiz from '../assets/Mega Quiz.jpeg';
 import iplImage from '../assets/ipl.jpeg';
 import treasureImage from '../assets/treasure.jpeg';
@@ -25,16 +24,15 @@ const Competition = () => {
     { title: 'Tech Antakshari', image: jammImage },
     { title: 'Component Hunt', image: roadshowImage },
     { title: 'Meme Malware', image: jammImage },
-    { title: 'Advertisement/Virtual Poster for Sponsors', image: roadshowImage },
+    // { title: 'Advertisement/Virtual Poster for Sponsors', image: roadshowImage },
   ];
 
   return (
     <div className="card-grid">
-      <BackButton />
       {cardsData.map((card, index) => (
         <Link
           key={index}
-          to={`/competitions/detail/${encodeURIComponent(card.title)}`}
+          to={`/events/competitions/${card.title}`}
         >
           <div className="card">
             <img src={card.image} alt={card.title} />

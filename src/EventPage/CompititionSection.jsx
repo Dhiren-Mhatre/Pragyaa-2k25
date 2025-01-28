@@ -6,7 +6,7 @@ const CompitationSection = () => {
     return (
         <Routes>
             <Route path="/" element={<Compitation />} />
-            <Route path="/detail/:title" element={<DetailCompitation />} />
+            <Route path="/title" element={<DetailCompitation />} />
         </Routes>
     );
 }

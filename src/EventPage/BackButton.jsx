@@ -6,7 +6,7 @@ const BackButton = () => {
 
   return (
     <button
-      onClick={() => navigate(-2)} 
+      onClick={() => navigate(-1)} 
       className="back-button" 
     >
       ← Go Back

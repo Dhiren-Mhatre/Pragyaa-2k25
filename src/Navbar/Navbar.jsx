@@ -100,7 +100,7 @@ const Header = ({ isHomePage }) => {
           <li>
             <button
               className="nav-item nav-link"
-              onClick={() => handleNavigation("/", "guestbox")}
+              onClick={() => handleNavigation("/events")}
             >
               EVENTS
             </button>
@@ -188,8 +188,8 @@ const Header = ({ isHomePage }) => {
           <li>
             <a
               className="nav-link scrollto"
-              href="#guestbox"
-              onClick={() => handleNavigation("/", "guestbox")}
+              href="#events"
+              onClick={() => handleNavigation("/events")}
             >
               EVENTS
             </a>

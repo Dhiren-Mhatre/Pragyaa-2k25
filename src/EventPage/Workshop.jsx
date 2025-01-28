@@ -2,7 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import BackButton from './BackButton';
 import Card from './Card';
-// import './CardGrid.css';
+// import './DetailPage.css'
+
 import roboticImage from '../assets/robotic.jpeg';
 import iplImage from '../assets/ipl.jpeg';
 import treasureImage from '../assets/treasure.jpeg';
@@ -24,11 +25,10 @@ const Workshop = () => {
 
   return (
     <div className="card-grid">
-      <BackButton />
       {cardsData.map((card, index) => (
         <Link 
           key={card.title} 
-          to={`/workshops/detail/${encodeURIComponent(card.title)}`}
+          to={`/events/workshops/${card.title}`}
         >
           <Card title={card.title} img={card.image} />
         </Link>
