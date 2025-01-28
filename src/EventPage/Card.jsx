@@ -11,7 +11,7 @@ const Card = ({ title, img }) => {
   return (
     <div className="card" style={{ cursor: 'pointer' }}>
       <button>
-      <h3 style={{ color: 'white' }}>{title}</h3>
+      <h3 style={{ color: 'white' ,zIndex:'1000'}}>{title}</h3>
       <img src={img} alt={title} style={{ width: '100%', height: 'auto' }} />
       </button>
     </div>
