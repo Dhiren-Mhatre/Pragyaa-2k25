@@ -16,11 +16,14 @@ import Sponsors from "./Sponsors/Sponsore";
 // import Event from "./EventPage";
 import Footer from "./componants/Footer";
 import EventRoutes from "./EventPage/EventRoutes";
+import SplashCursor from "./Curser/SplashCursor";
 
 
 const MainContent = () => {
     return (
       <>
+      <SplashCursor/>
+
         <div className="fixed top-0 left-0 w-full h-full -z-10">
           <Home />
         </div>

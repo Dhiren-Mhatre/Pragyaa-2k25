@@ -61,7 +61,7 @@ const Footer = () => {
             {/* Logo Section */}
             <div className="px-2 flex flex-col items-center md:items-start">
               <img 
-                src={pragyaaLogo} 
+                src="https://res.cloudinary.com/dg6qtpags/image/upload/v1738229669/your-cloudinary-folder-name/hw47imc72mac5hf32mfm.png" 
                 alt="PRAGYAA 2025" 
                 className="h-80 w-80 mb-3" 
               />
@@ -72,7 +72,7 @@ const Footer = () => {
 
             {/* Quick Links */}
             <div className="space-y-4 px-10 hidden md:block ">
-              <h3 className="text-2xl font-extrabold text-red-500 text-start md:text-left">Quick Links</h3>
+              <h3 className="text-2xl font-extrabold text-red-500 text-start md:text-center">Quick Links</h3>
               <nav className="flex flex-col space-y-3">
                 <a 
                   href="#guestbox" 

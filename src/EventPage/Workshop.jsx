@@ -17,7 +17,7 @@ const Workshop = () => {
     { title: 'CAD & CATIA Workshop', image: roboticImage },
     { title: 'Artificial Intelligence and Machine Learning with Blockchain', image: iplImage },
     { title: 'Workshop on Electric Vehicles', image: treasureImage },
-    { title: 'CV/Resume Building Workshop', image: sharkImage },
+    // { title: 'CV/Resume Building Workshop', image: sharkImage },
     { title: 'Electropath', image: mockImage },
     { title: 'Workshop on Verilog HDL', image: jaam },
     { title: 'Workshop on Business Analytics', image: roadshow },

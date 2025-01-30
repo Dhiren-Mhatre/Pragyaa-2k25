@@ -15,7 +15,7 @@ function About() {
             <img 
               id="astronaut" 
               alt="Astronaut" 
-              src={Invert_T} 
+              src="https://res.cloudinary.com/dg6qtpags/image/upload/v1738229295/your-cloudinary-folder-name/vvsllhpqclla1zug3ave.png"
               style={{ width: '11rem', animation: 'float 4s ease-in-out infinite', margin: '0' }} 
             />
             {/* <img id="planet" alt="Planet" src={Invert} style={{ margin: '0' }} /> */}

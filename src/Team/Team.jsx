@@ -5,21 +5,17 @@ import TeamCard from "./TeamCard";
 import Squares from "../Background/Squares";
 // import Im1 from '../assets/im1.jpg';
 import "./Team1.css";
+import Hero from "../componants/Hero/Hero";
 function Team() {
   return (
     <>
-      <div className="background-squares">
-     
-        <Squares
-          speed={0.5}
-          squareSize={70}
-          direction="diagonal"
-          borderColor="#ff0000"
-          hoverFillColor="#ff0000"
-        />
+  <div className="team-page">
+      <div className="hero-background">
+        <Hero />
       </div>
       <div>
-        <div className="flex flex-col justify-start items-center min-h-[570px] pt-8 px-4 pb-24">
+      <div className="team-content">
+      <div className="flex flex-col justify-start items-center min-h-[570px] pt-8 px-4 pb-24">
           <h1 className="text-white text-4xl font-semibold mb-8 text-center p-8">
             Meet Our Team
           </h1>
@@ -547,6 +543,8 @@ function Team() {
                     </div>
                 </div>
             </div>
+      </div>
+      </div>
       </div>
     </>
   );

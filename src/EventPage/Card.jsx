@@ -15,7 +15,7 @@ const Card = ({ title, img }) => {
       <img src={img} alt={title} style={{ width: '100%', height: 'auto' }} />
       </button>
     </div>
-    );
+  );
 };  
 
 export default Card;

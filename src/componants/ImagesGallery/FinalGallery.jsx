@@ -8,11 +8,11 @@ import im5 from "../../assets/im5.jpg";
 
 const FinalGallery = () => {
   const galleryItems = [
-    { imageUrl: im1, caption: "Image 1" },
-    { imageUrl: im2, caption: "Image 2" },
-    { imageUrl: im3, caption: "Image 3" },
-    { imageUrl: im4, caption: "Image 4" },
-    { imageUrl: im5, caption: "Image 5" },
+    { imageUrl: "https://res.cloudinary.com/dg6qtpags/image/upload/v1738228895/your-cloudinary-folder-name/gi1e19knyjm1ybfdl4na.jpg", caption: "" },
+    { imageUrl: "https://res.cloudinary.com/dg6qtpags/image/upload/v1738228905/your-cloudinary-folder-name/bwidxy4vkdy2leyyyjdw.jpg", caption: "" },
+    { imageUrl: "https://res.cloudinary.com/dg6qtpags/image/upload/v1738228911/your-cloudinary-folder-name/k1cbf8akte3qgjtld1oe.jpg", caption: "" },
+    { imageUrl: "https://res.cloudinary.com/dg6qtpags/image/upload/v1738228916/your-cloudinary-folder-name/s1xrpeea210ws7rf1vzs.jpg", caption: "" },
+    { imageUrl: "https://res.cloudinary.com/dg6qtpags/image/upload/v1738228923/your-cloudinary-folder-name/rpzaigcmwtwpmbvmgbpt.jpg", caption: "" },
   ];
 
   const isMobile = window.innerWidth <= 768; 
@@ -32,5 +32,15 @@ const FinalGallery = () => {
     </div>
   );
 };
-
+// dhiren-mhatre@dhiren-mhatre-Inspiron-15-3511:~/Downloads/backend$ node index.js 
+// Uploading: DSC_0326.jpg
+// Uploaded DSC_0326.jpg: https://res.cloudinary.com/dg6qtpags/image/upload/v1738228895/your-cloudinary-folder-name/gi1e19knyjm1ybfdl4na.jpg
+// Uploading: DSC_0344.jpg
+// Uploaded DSC_0344.jpg: https://res.cloudinary.com/dg6qtpags/image/upload/v1738228905/your-cloudinary-folder-name/bwidxy4vkdy2leyyyjdw.jpg
+// Uploading: IMG_2752.jpg
+// Uploaded IMG_2752.jpg: https://res.cloudinary.com/dg6qtpags/image/upload/v1738228911/your-cloudinary-folder-name/k1cbf8akte3qgjtld1oe.jpg
+// Uploading: IMG_2841.jpg
+// Uploaded IMG_2841.jpg: https://res.cloudinary.com/dg6qtpags/image/upload/v1738228916/your-cloudinary-folder-name/s1xrpeea210ws7rf1vzs.jpg
+// Uploading: IMG_3932.jpg
+// Uploaded IMG_3932.jpg: https://res.cloudinary.com/dg6qtpags/image/upload/v1738228923/your-cloudinary-folder-name/rpzaigcmwtwpmbvmgbpt.jpg
 export default FinalGallery;

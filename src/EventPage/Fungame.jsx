@@ -21,8 +21,8 @@ const Fungame = () => {
           to={`/events/fungames/${card.title}`}
         >
           <div className="card">
-            <img src={card.image} alt={card.title} />
             <h2>{card.title}</h2>
+            <img src={card.image} alt={card.title} />
           </div>
         </Link>
       ))}

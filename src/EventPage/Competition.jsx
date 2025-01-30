@@ -35,7 +35,7 @@ const Competition = () => {
           to={`/events/competitions/${card.title}`}
         >
           <div className="card">
-            <h2 >{card.title}</h2>
+            <h2>{card.title}</h2>
             <img src={card.image} alt={card.title} />
           </div>
         </Link>

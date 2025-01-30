@@ -74,7 +74,7 @@
 .card-title {
   font-size: 1rem;
   font-weight: 600;
-  color: #ebdfdf;
+  color: #333;
   margin: 0;
   line-height: 1.2;
 }
@@ -109,8 +109,8 @@
 
 /* Glowing Borders */
 .card:hover {
-  border: 2px solid rgba(133, 46, 6, 0.6);
-  box-shadow: 0 20px 30px rgba(83, 9, 2, 0.3), 
+  border: 2px solid rgba(130, 6, 133, 0.6);
+  box-shadow: 0 20px 30px rgba(130, 6, 133, 0.3), 
               0 0 40px rgba(180, 1, 147, 0.4);
 }
 

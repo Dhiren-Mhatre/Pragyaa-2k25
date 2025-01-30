@@ -109,7 +109,6 @@ const AppContent = () => {
 
   return (
     <>
-      <SplashCursor/>
       <Navbar isHomePage={location.pathname === '/'} />
       <Routes>
         <Route path="/schedule" element={<SchedulePage />} />
