@@ -1,19 +1,19 @@
 
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-// import './CardGrid.css'
-import './Card.css'
-// import './EventPage.css'
+import './CardGrid.css'
 
 const Card = ({ title, img }) => {
 
 
   return (
-    <div className="card" style={{ cursor: 'pointer' }}>
+    <div>
+      <div className="card" style={{ cursor: 'pointer' }}>
       <button>
-      <h3 style={{ color: 'white' ,zIndex:'1000'}}>{title}</h3>
-      <img src={img} alt={title} style={{ width: '100%', height: 'auto' }} />
+        <h3>{title}</h3>
+        <img src={img} alt={title} style={{ width: '100%', height: 'auto',margin:'0.5rem' }} />
       </button>
+    </div>
     </div>
   );
 };  

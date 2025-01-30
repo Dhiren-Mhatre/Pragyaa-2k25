@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Card.css';
+import './CardGrid.css';
 import MegaQuiz from '../assets/Mega Quiz.jpeg';
 import iplImage from '../assets/ipl.jpeg';
 import treasureImage from '../assets/treasure.jpeg';
@@ -24,10 +24,15 @@ const Competition = () => {
     { title: 'Tech Antakshari', image: jammImage },
     { title: 'Component Hunt', image: roadshowImage },
     { title: 'Meme Malware', image: jammImage },
-    // { title: 'Advertisement/Virtual Poster for Sponsors', image: roadshowImage },
+    { title: 'Advertisement/Virtual Poster for Sponsors', image: roadshowImage },
   ];
 
   return (
+    <>
+    <h1 className="text-white text-4xl font-semibold mb-8 text-center p-8">
+        Competition
+        </h1>
+    <div className='flex justify-center items-center'>
     <div className="card-grid">
       {cardsData.map((card, index) => (
         <Link
@@ -35,12 +40,14 @@ const Competition = () => {
           to={`/events/competitions/${card.title}`}
         >
           <div className="card">
-            <h2>{card.title}</h2>
             <img src={card.image} alt={card.title} />
+            <h2>{card.title}</h2>
           </div>
         </Link>
       ))}
     </div>
+    </div>
+    </>
   );
 };
 

@@ -1,17 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Card.css';
+import './CardGrid.css';
 import roboticImage from '../assets/robotic.jpeg';
 import iplImage from '../assets/ipl.jpeg';
 
 const Exhibition = () => {
   const cardsData = [
     { title: 'Junior Scientist', image: roboticImage },
-    { title: 'Project Exhibition', image: iplImage },
+    // { title: 'Project Exhibition', image: iplImage },
   ];
 
   return (
-    <div className="card-grid">
+    <>
+    <h1 className="text-white text-4xl font-semibold mb-8 text-center p-8">
+    Exhibition
+        </h1>
+     <div className='flex justify-center items-center'>
+     <div className="card-grid">
       {/* <BackButton /> */}
       {cardsData.map((card, index) => (
         <Link
@@ -19,12 +24,14 @@ const Exhibition = () => {
           to={`/events/exhibitions/${card.title}`}
         >
           <div className="card">
-            <h2>{card.title}</h2>
             <img src={card.image} alt={card.title} />
+            <h2>{card.title}</h2>
           </div>
         </Link>
       ))}
     </div>
+     </div>
+    </>
   );
 };
 

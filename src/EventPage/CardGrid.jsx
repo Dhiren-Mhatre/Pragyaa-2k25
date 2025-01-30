@@ -1,6 +1,5 @@
 import React from 'react';
 import Card from './Card';
-import './Card.css';
 import roboticImage from '../assets/robotic.jpeg';
 import iplImage from '../assets/ipl.jpeg';
 import treasureImage from '../assets/treasure.jpeg';
@@ -24,7 +23,12 @@ const CardGrid = () => {
   ];
 
   return (
-    <div className="card-grid">
+    <>
+    <h1 className="text-white text-4xl font-semibold mb-8 text-center p-8">
+        Competition
+        </h1>
+    <div className='flex items-center justify-center'>
+      <div className="card-grid">
       {cardsData.map((card, index) => (
         <Link 
           key={card.title} 
@@ -34,6 +38,8 @@ const CardGrid = () => {
         </Link>
       ))}
     </div>
+    </div>
+    </>
   );
 };
 

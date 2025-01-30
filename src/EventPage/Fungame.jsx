@@ -1,19 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Card.css';
+import './CardGrid.css';
 import roboticImage from '../assets/robotic.jpeg';
 import iplImage from '../assets/ipl.jpeg';
 
 const Fungame = () => {
   const cardsData = [
-    { title: 'BGMI COD', image: roboticImage },
-    { title: 'Mini Militia', image: iplImage },
-    { title: 'Smash Carts', image: roboticImage },
-    { title: 'Fete Games', image: iplImage },
-    { title: 'Darts', image: iplImage },
+    { title: 'BGMI', image: roboticImage },
+    { title: 'free fire', image: iplImage },
+    { title: 'volerant', image: roboticImage },
+    { title: 'c.o.d', image: iplImage },
   ];
 
   return (
+    <>
+    <h1 className="text-white text-4xl font-semibold mb-8 text-center p-8">
+          E-sports
+        </h1>
+    <div className='flex justify-around items-center'>
     <div className="card-grid">
       {cardsData.map((card, index) => (
         <Link
@@ -21,12 +25,14 @@ const Fungame = () => {
           to={`/events/fungames/${card.title}`}
         >
           <div className="card">
-            <h2>{card.title}</h2>
             <img src={card.image} alt={card.title} />
+            <h2>{card.title}</h2>
           </div>
         </Link>
       ))}
     </div>
+    </div>
+    </>
   );
 };
 

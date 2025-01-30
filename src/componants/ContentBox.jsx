@@ -108,7 +108,7 @@ const ContentBox = () => {
         <br></br>
         <div className="date-details">
           <span className="date-numbers">
-            21<b>TH</b> 22<b>TH</b> 23<b>TH</b>
+            21<b>st</b> 22<b>nd</b> 23<b>rd</b>
           </span>
           <span className="date-year">
             2025 February
