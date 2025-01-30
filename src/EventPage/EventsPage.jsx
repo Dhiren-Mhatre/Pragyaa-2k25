@@ -26,17 +26,26 @@ const EventsPage = () => {
 
   return (
     <>
-  
-    <h1 className="text-white text-4xl font-semibold mb-8 text-center p-8">
+    <div className="team-page">
+      <div className="hero-background">
+        <Hero />
+      </div>
+      <div>
+      <div className="team-content">
+    
+    <div className='flex justify-center items-center flex-col gap-16'>
+    <h1 className="text-white text-4xl font-semibold mb-8 text-center p-8 z-999">
           Pragyan 2k25
         </h1>
-    <div className='flex justify-center items-center gap-16'>
     <div className="card-grid">
       {cardsData.map((card, index) => (
         <div key={index} onClick={() => handleCardClick(card.path)}>
           <Card title={card.title} img={card.image} />
         </div>
       ))}
+    </div>
+    </div>
+    </div>
     </div>
     </div>
     </>

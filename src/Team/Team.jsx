@@ -1,11 +1,18 @@
 import React from "react";
+import Hero from '../componants/Hero/Hero';
 
 import TeamCard from "./TeamCard";
 import "./Team1.css";
 function Team() {
   return (
     <>
-     <div className="flex flex-col justify-start items-center min-h-[570px] pt-8 px-4 pb-24">
+     <div className="team-page">
+      <div className="hero-background">
+        <Hero />
+      </div>
+      <div>
+      <div className="team-content">
+     <div className="flex flex-col justify-start items-center min-h-[570px] pt-8 px-4 pb-24 z-10">
      <h1 className="text-white text-4xl font-semibold mb-8 text-center p-8">
           Meet Our Team
         </h1>
@@ -23,12 +30,12 @@ function Team() {
         </div>
       </div>
       <div className="flex flex-col justify-start items-center min-h-[570px] pt-8 px-4 pb-24">
-        <h2 className="main-coordinator-heading">PRAGYAA Head </h2>
+        <h2 className="main-coordinator-heading">Cheif Advisor</h2>
         <div className="team-container">
           <div className="team-card">
             <TeamCard
               name="tushar gupta"
-              position="PRAGYAA Head "
+              position="Cheif Advisor"
      
               email="2022BIN008@sggs.ac.in"jpg
               image="https://res.cloudinary.com/dg6qtpags/image/upload/v1738244490/your-cloudinary-folder-name/fi00l9dejdpixialrf95.jpg"
@@ -439,6 +446,9 @@ Executive "
             />
           </div>
         </div>
+      </div>
+      </div>
+      </div>
       </div>
     </>
   );

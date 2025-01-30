@@ -11,14 +11,14 @@ import { Link } from 'react-router-dom';
 
 const CardGrid = () => {
   const cardsData = [
-    { title: 'Robotic Wedge War', image: roboticImage },
+    // { title: 'Robotic Wedge War', image: roboticImage },
     { title: 'IPL Auction SGGS', image: iplImage },
     { title: 'Mega Treasure Hunt', image: treasureImage },
     { title: 'Shark Tank SGGS', image: sharkImage },
     { title: 'Mock Placement', image: mockImage },
     { title: 'SGGS Mega Jamm', image: jaam },
     { title: 'Roadshows', image: roadshow },
-    { title: 'Robotic Wedge War', image: roboticImage },
+    // { title: 'Robotic Wedge War', image: roboticImage },
     { title: 'IPL Auction SGGS', image: iplImage },
   ];
 
