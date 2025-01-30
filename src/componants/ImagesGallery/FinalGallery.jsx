@@ -1,6 +1,6 @@
 import React from "react";
 import { ImageGallery } from "./ImageGallery";
-import im1 from "../../assets/im1.jpg";
+import im1 from "../../assets/image.png";
 import im2 from "../../assets/im2.jpg";
 import im3 from "../../assets/im3.jpg";
 import im4 from "../../assets/im4.jpg";
@@ -10,6 +10,7 @@ const FinalGallery = () => {
   const galleryItems = [
     { imageUrl: "https://res.cloudinary.com/dg6qtpags/image/upload/v1738228895/your-cloudinary-folder-name/gi1e19knyjm1ybfdl4na.jpg", caption: "" },
     { imageUrl: "https://res.cloudinary.com/dg6qtpags/image/upload/v1738228905/your-cloudinary-folder-name/bwidxy4vkdy2leyyyjdw.jpg", caption: "" },
+    { imageUrl: im1, caption: "" },
     { imageUrl: "https://res.cloudinary.com/dg6qtpags/image/upload/v1738228911/your-cloudinary-folder-name/k1cbf8akte3qgjtld1oe.jpg", caption: "" },
     { imageUrl: "https://res.cloudinary.com/dg6qtpags/image/upload/v1738228916/your-cloudinary-folder-name/s1xrpeea210ws7rf1vzs.jpg", caption: "" },
     { imageUrl: "https://res.cloudinary.com/dg6qtpags/image/upload/v1738228923/your-cloudinary-folder-name/rpzaigcmwtwpmbvmgbpt.jpg", caption: "" },
