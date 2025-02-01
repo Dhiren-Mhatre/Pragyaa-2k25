@@ -117,7 +117,7 @@ const Footer = () => {
               <h3 className="text-2xl font-extrabold text-red-500 text-center md:text-left">Contact Us</h3>
                 <p>Email:{' '}
                   <a
-                    href="mailto:pragyaa@sggsiet.ac.in"
+                    href="mailto:pragyaa@sggs.ac.in"
                     className="email-link text-sm text-blue-500"
                   >
                     pragyaa@sggs.ac.in
