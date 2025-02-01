@@ -65,7 +65,7 @@
   const faqData = [
     {
       question: "What are the accommodation arrangements?",
-      answer: `For Boys Accommodation facilities are available at the SRTM University. The charges for the same will be Rs 100 per head per night And for girls Accommodation facilities are available at SGGS girls Hostel for free, for meal Rs 150 charged at Hostel Mess.`,
+      answer: `For Boys Accommodation facilities are available at the SRTM University. The charges for the same will be Rs 100 per head per night And for girls Accommodation facilities are available at SGGS girls Hostel for free, for meal Rs 170 charged at Hostel Mess.`,
     },
     {
       question: "What is the exact location of the event?",

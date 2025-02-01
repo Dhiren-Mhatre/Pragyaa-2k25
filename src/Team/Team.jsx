@@ -357,7 +357,7 @@ Executive "
         <div className="team-container">
           <div className="team-card">
             <TeamCard
-              name="Dhiran Mhatre"
+              name="Dhiren Mhatre"
               position="Senior Executive"
               instagram=""
          
@@ -367,7 +367,7 @@ Executive "
           </div>
           <div className="team-card">
             <TeamCard
-              name="ATHARWA SUPE"
+              name="ATHARVA SUPE"
               position="Senior ASSISTANT Executive"
               instagram="asfdasdf"
               linkedin="adsfasfd"
