@@ -120,7 +120,7 @@ const Footer = () => {
                     href="mailto:pragyaa@sggsiet.ac.in"
                     className="email-link text-sm text-blue-500"
                   >
-                    pragyaa@sggsiet.ac.in
+                    pragyaa@sggs.ac.in
                   </a>
                 </p>
                 <p>Student Coordinator:{' '}
