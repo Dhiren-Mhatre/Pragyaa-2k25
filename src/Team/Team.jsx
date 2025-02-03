@@ -1,8 +1,18 @@
 import React from "react";
 import Hero from '../componants/Hero/Hero';
+import malhar from '../assets/malhar.webp'
+import nawaz from '../assets/nawaz.webp'
+import omkar from '../assets/omkar.webp'
+import gawale from '../assets/gawale.webp'
+import yedabocha from '../assets/satyajeet.webp'
+import supe from '../assets/supe.webp'
+import tuka from '../assets/tuka.webp'
+import zishan from '../assets/zishan.webp'
+import dharma from '../assets/dharma.webp'
 
 import TeamCard from "./TeamCard";
 import "./Team1.css";
+import { Bot } from "lucide-react";
 function Team() {
   return (
     <>
@@ -44,7 +54,7 @@ function Team() {
         </div>
       </div>
       <div className="flex flex-col justify-start items-center min-h-[570px] pt-8 px-4 pb-24">
-        <h2 className="main-coordinator-heading">Main Coordinator</h2>
+        <h2 className="main-coordinator-heading">Student Joint Coordinator</h2>
         <div className="team-container">
           <div className="team-card">
             <TeamCard
@@ -72,7 +82,7 @@ function Team() {
               instagram="asfdasdf"
               linkedin="adsfasfd"
               email="2022BCS111@sggs.ac.in"
-              image="https://res.cloudinary.com/dg6qtpags/image/upload/v1738229669/your-cloudinary-folder-name/hw47imc72mac5hf32mfm.png"
+              image={dharma}
             />
           </div>
           <div className="team-card">
@@ -82,7 +92,7 @@ function Team() {
               instagram="asfdasdf"
               linkedin="adsfasfd"
               email="2022BEC002@sggs.ac.in"
-              image="https://res.cloudinary.com/dg6qtpags/image/upload/v1738229669/your-cloudinary-folder-name/hw47imc72mac5hf32mfm.png"
+              image={nawaz}
             />
           </div>
         </div>
@@ -110,7 +120,7 @@ function Team() {
               position="Senior Executive "
      
               email="2023BCE055@sggs.ac.in"
-              image="https://res.cloudinary.com/dg6qtpags/image/upload/v1738229669/your-cloudinary-folder-name/hw47imc72mac5hf32mfm.png"
+              image={omkar}
             />
           </div>
           <div className="team-card">
@@ -135,7 +145,7 @@ Executive "
               position="Senior Executive"
      
               email="2022BIN008@sggs.ac.in"
-              image="https://res.cloudinary.com/dg6qtpags/image/upload/v1738229669/your-cloudinary-folder-name/hw47imc72mac5hf32mfm.png"
+              image="https://res.cloudinary.com/dg6qtpags/image/upload/v1738244486/your-cloudinary-folder-name/ju1crsmmmedoypykowsk.jpg"
             />
           </div>
           <div className="team-card">
@@ -163,17 +173,8 @@ Executive"
         </div>
       </div>
       <div className="flex flex-col justify-start items-center min-h-[570px] pt-8 px-4 pb-24">
-        <h2 className="main-coordinator-heading">Guest Experience and Permissions Manager</h2>
+        <h2 className="main-coordinator-heading">Permissions Manager</h2>
         <div className="team-container">
-          <div className="team-card">
-            <TeamCard
-              name="Senior Executive "
-              position="Senior Executive"
-     
-              email="2022BIN008@sggs.ac.in"
-              image="https://res.cloudinary.com/dg6qtpags/image/upload/v1738229669/your-cloudinary-folder-name/hw47imc72mac5hf32mfm.png"
-            />
-          </div>
           <div className="team-card">
             <TeamCard
               name="Shrirang Rekhate"
@@ -219,43 +220,7 @@ Executive "
               position="Senior Executive "
      
               email="2023BCE055@sggs.ac.in"
-              image="https://res.cloudinary.com/dg6qtpags/image/upload/v1738229669/your-cloudinary-folder-name/hw47imc72mac5hf32mfm.png"
-            />
-          </div>
-          <div className="team-card">
-            <TeamCard
-              name="Mohit Joshi"
-              position="Senior Assistant 
-Executive "
-              instagram="asfdasdf"
-              linkedin="adsfasfd"
-              email="2023BPR037@sggs.ac.in"
-              image="https://res.cloudinary.com/dg6qtpags/image/upload/v1738229669/your-cloudinary-folder-name/hw47imc72mac5hf32mfm.png"
-            />
-          </div>
-        </div>
-      </div>
-      <div className="flex flex-col justify-start items-center min-h-[570px] pt-8 px-4 pb-24">
-        <h2 className="main-coordinator-heading">Public Relations Officers</h2>
-        <div className="team-container">
-          <div className="team-card">
-            <TeamCard
-              name="Malhar Maradwar"
-              position="Senior Executive "
-     
-              email="2023BCE055@sggs.ac.in"
-              image="https://res.cloudinary.com/dg6qtpags/image/upload/v1738229669/your-cloudinary-folder-name/hw47imc72mac5hf32mfm.png"
-            />
-          </div>
-          <div className="team-card">
-            <TeamCard
-              name="Mohit Joshi"
-              position="Senior Assistant 
-Executive "
-              instagram="asfdasdf"
-              linkedin="adsfasfd"
-              email="2023BPR037@sggs.ac.in"
-              image="https://res.cloudinary.com/dg6qtpags/image/upload/v1738229669/your-cloudinary-folder-name/hw47imc72mac5hf32mfm.png"
+              image={malhar}
             />
           </div>
         </div>
@@ -293,7 +258,7 @@ Executive "
               position="Senior Executive "
      
               email="2023BCE055@sggs.ac.in"
-              image="https://res.cloudinary.com/dg6qtpags/image/upload/v1738229669/your-cloudinary-folder-name/hw47imc72mac5hf32mfm.png"
+              image={nawaz}
             />
           </div>
           
@@ -305,7 +270,19 @@ Executive "
               instagram="asfdasdf"
               linkedin="adsfasfd"
               email="2023BPR037@sggs.ac.in"
-              image="https://res.cloudinary.com/dg6qtpags/image/upload/v1738229669/your-cloudinary-folder-name/hw47imc72mac5hf32mfm.png"
+              image={zishan}
+            />
+          </div>
+
+          <div className="team-card">
+            <TeamCard
+              name="Tukaram Renge+ "
+              position="Senior Assistant 
+Executive "
+              instagram="asfdasdf"
+              linkedin="adsfasfd"
+              email="2023BPR037@sggs.ac.in"
+              image={tuka}
             />
           </div>
         </div>
@@ -331,7 +308,7 @@ Executive "
               instagram="asfdasdf"
               linkedin="adsfasfd"
               email="2023BPR037@sggs.ac.in"
-              image="https://res.cloudinary.com/dg6qtpags/image/upload/v1738229669/your-cloudinary-folder-name/hw47imc72mac5hf32mfm.png"
+              image={gawale}
             />
           </div>
         </div>
@@ -347,7 +324,7 @@ Executive "
               instagram="asfdasdf"
               linkedin="adsfasfd"
               email="2023BPR037@sggs.ac.in"
-              image="https://res.cloudinary.com/dg6qtpags/image/upload/v1738229669/your-cloudinary-folder-name/hw47imc72mac5hf32mfm.png"
+              image={yedabocha}
             />
           </div>
         </div>
@@ -372,7 +349,8 @@ Executive "
               instagram="asfdasdf"
               linkedin="adsfasfd"
               email="2022BEL030@sggs.ac.in"
-              image="https://res.cloudinary.com/dg6qtpags/image/upload/v1738244488/your-cloudinary-folder-name/qnfa1ronpp7zcloprlvb.jpg"
+              image={supe}
+              // image="https://res.cloudinary.com/dg6qtpags/image/upload/v1738244488/your-cloudinary-folder-name/qnfa1ronpp7zcloprlvb.jpg"
             />
           </div>
         </div>
