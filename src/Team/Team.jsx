@@ -9,6 +9,22 @@ import supe from '../assets/supe.webp'
 import tuka from '../assets/tuka.webp'
 import zishan from '../assets/zishan.webp'
 import dharma from '../assets/dharma.webp'
+import ankit from '../assets/pics/ankit.jpg'
+import tushar from '../assets/pics/tushar.jpg'
+import sneha from '../assets/pics/sneha.jpg'
+import vallabh from '../assets/pics/vallabh.jpg'
+import siddhi from '../assets/pics/siddhi.jpg'
+import arohi from '../assets/pics/arohi.jpg'
+import pratik from '../assets/pics/pratik.jpg'
+import dhiren from '../assets/pics/dhiren.jpg'
+import aditya from '../assets/pics/aditya.jpg'
+import nandakishor from '../assets/pics/nandakishor.jpg'
+import saloni from '../assets/pics/saloni.jpg'
+import ishita from '../assets/pics/ishita.jpg'
+import arbaz from '../assets/pics/arbaz.jpg'
+import disha from '../assets/pics/disha.jpg'
+import harshita from '../assets/pics/harshita.png'
+import shrirang from '../assets/pics/shrirang.jpg'
 
 import TeamCard from "./TeamCard";
 import "./Team1.css";
@@ -33,8 +49,8 @@ function Team() {
               name="ankit khamitkar"
               position="Technical Secretary"
      
-              email="2022BIN008@sggs.ac.in"jpg
-              image="https://res.cloudinary.com/dg6qtpags/image/upload/v1738239532/your-cloudinary-folder-name/dxkmrzwnbxnuhfu9u41u.jpg"
+              email="2022BIN008@sggs.ac.in"
+              image={ankit}
             />
           </div>
         </div>
@@ -48,7 +64,7 @@ function Team() {
               position="Cheif Advisor"
      
               email="2022BIN008@sggs.ac.in"jpg
-              image="https://res.cloudinary.com/dg6qtpags/image/upload/v1738244490/your-cloudinary-folder-name/fi00l9dejdpixialrf95.jpg"
+              image={tushar}
             />
           </div>
         </div>
@@ -62,7 +78,7 @@ function Team() {
               position="Student Joint Coordinator"
      
               email="2022BIN008@sggs.ac.in"
-              image="https://res.cloudinary.com/dg6qtpags/image/upload/v1738244486/your-cloudinary-folder-name/ju1crsmmmedoypykowsk.jpg"
+              image={sneha}
             />
           </div>
           <div className="team-card">
@@ -72,7 +88,7 @@ function Team() {
               instagram="asfdasdf"
               linkedin="adsfasfd"
               email="2023BEC512@sggs.ac.in"
-              image="https://res.cloudinary.com/dg6qtpags/image/upload/v1738239589/your-cloudinary-folder-name/cczzx4dpwa0wojpjub6b.jpg"
+              image={vallabh}
             />
           </div>
           <div className="team-card">
@@ -145,7 +161,7 @@ Executive "
               position="Senior Executive"
      
               email="2022BIN008@sggs.ac.in"
-              image="https://res.cloudinary.com/dg6qtpags/image/upload/v1738244486/your-cloudinary-folder-name/ju1crsmmmedoypykowsk.jpg"
+              image={sneha}
             />
           </div>
           <div className="team-card">
@@ -156,7 +172,7 @@ Executive"
               instagram="asfdasdf"
               linkedin="adsfasfd"
               email="2022BEC002@sggs.ac.in"
-              image="https://res.cloudinary.com/dg6qtpags/image/upload/v1738244436/your-cloudinary-folder-name/pwqczlm0waswhah6nhiw.png"
+              image={harshita}
             />
           </div>
           <div className="team-card">
@@ -167,7 +183,7 @@ Executive"
               instagram="asfdasdf"
               linkedin="adsfasfd"
               email="2022BEC002@sggs.ac.in"
-              image="https://res.cloudinary.com/dg6qtpags/image/upload/v1738239584/your-cloudinary-folder-name/w0eaajvqcraqujvwj8z6.jpg"
+              image={disha}
             />
           </div>
         </div>
@@ -181,7 +197,7 @@ Executive"
               position="Senior Executive"
      
               email="2022BIN008@sggs.ac.in"
-              image="https://res.cloudinary.com/dg6qtpags/image/upload/v1738244410/your-cloudinary-folder-name/ucgmox5rqvvskj8ql3qp.jpg"
+              image={shrirang}
             />
           </div>
         </div>
@@ -195,7 +211,7 @@ Executive"
               position="Senior Executive "
      
               email="2023BCE055@sggs.ac.in"
-              image="https://res.cloudinary.com/dg6qtpags/image/upload/v1738239589/your-cloudinary-folder-name/cczzx4dpwa0wojpjub6b.jpg"
+              image={vallabh}
             />
           </div>
           <div className="team-card">
@@ -206,7 +222,7 @@ Executive "
               instagram="asfdasdf"
               linkedin="adsfasfd"
               email="2023BPR037@sggs.ac.in"
-              image="https://res.cloudinary.com/dg6qtpags/image/upload/v1738244351/your-cloudinary-folder-name/oz2lyfysazl1qu7zqtgn.jpg"
+              image={siddhi}
             />
           </div>
         </div>
@@ -234,7 +250,7 @@ Executive "
               position="Senior Executive "
      
               email="2023BCE055@sggs.ac.in"
-              image="https://res.cloudinary.com/dg6qtpags/image/upload/v1738239580/your-cloudinary-folder-name/bewbzyjodopxhikizyrq.jpg"
+              image={arohi}
             />
           </div>
           <div className="team-card">
@@ -244,7 +260,7 @@ Executive "
               instagram="asfdasdf"
               linkedin="adsfasfd"
               email="2023BPR037@sggs.ac.in"
-              image="https://res.cloudinary.com/dg6qtpags/image/upload/v1738239548/your-cloudinary-folder-name/hkifn5hmuua6lixjmlgv.jpg"
+              image={arbaz}
             />
           </div>
         </div>
@@ -296,7 +312,7 @@ Executive "
               position="Senior Executive "
      
               email="2023BCE055@sggs.ac.in"
-              image="https://res.cloudinary.com/dg6qtpags/image/upload/v1738244464/your-cloudinary-folder-name/pmoutk1kufnpkx5l2d8n.jpg"
+              image={pratik}
             />
           </div>
           
@@ -339,7 +355,7 @@ Executive "
               instagram=""
          
               email="2022BCS109@sggs.ac.in"
-              image="https://res.cloudinary.com/dg6qtpags/image/upload/v1738239578/your-cloudinary-folder-name/fozmetowh3ikn9si2jql.jpg"
+              image={dhiren}
             />
           </div>
           <div className="team-card">
@@ -349,8 +365,8 @@ Executive "
               instagram="asfdasdf"
               linkedin="adsfasfd"
               email="2022BEL030@sggs.ac.in"
-              image={supe}
-              // image="https://res.cloudinary.com/dg6qtpags/image/upload/v1738244488/your-cloudinary-folder-name/qnfa1ronpp7zcloprlvb.jpg"
+              // image={supe}
+              image="https://res.cloudinary.com/dg6qtpags/image/upload/v1738244488/your-cloudinary-folder-name/qnfa1ronpp7zcloprlvb.jpg"
             />
           </div>
         </div>
@@ -364,7 +380,8 @@ Executive "
               position="Junior Executive "
      
               email="2023BCE055@sggs.ac.in"
-              image="https://res.cloudinary.com/dg6qtpags/image/upload/v1738245644/your-cloudinary-folder-name/n4qougjpplvqbwqhnjpz.jpg"           />
+              image={aditya}
+                         />
           </div>
           
           <div className="team-card">
@@ -374,7 +391,7 @@ Executive "
               instagram="asfdasdf"
               linkedin="adsfasfd"
               email="2023BPR037@sggs.ac.in"
-              image="https://res.cloudinary.com/dg6qtpags/image/upload/v1738243482/your-cloudinary-folder-name/rpazhzpuejwgifmvvsky.jpg"
+              image={nandakishor}
             />
           </div>
           <div className="team-card">
@@ -399,7 +416,7 @@ Executive "
               position="Junior Assistant "
      
               email="2023BCE055@sggs.ac.in"
-              image="https://res.cloudinary.com/dg6qtpags/image/upload/v1738243673/your-cloudinary-folder-name/mrthtun2ai7umcgp7ni8.jpg"
+              image={saloni}
             />
           </div>
           
@@ -410,7 +427,7 @@ Executive "
               instagram="asfdasdf"
               linkedin="adsfasfd"
               email="2023BPR037@sggs.ac.in"
-              image="https://res.cloudinary.com/dg6qtpags/image/upload/v1738243461/your-cloudinary-folder-name/maxkyqkkcexie21afaju.jpg"
+              image={ishita}
             />
           </div>
           <div className="team-card">
