@@ -1,16 +1,13 @@
 import React, { useEffect, useState } from "react";
-// import './App.css';
 import CardGrid from './CardGrid';
 import DetailPage from './DetailPage';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import DetailWorkshop from './DetailWorkshop';
-import Workshop from './Workshop';
-import Competition from './Competition';
-import DetailCompetition from './DetailCompetition';
-import Exhibition from './Exhibition';
-import DetailExhibition from './DetailExhibition';
-import Fungame from './Fungame';
-import DetailFungame from './DetailFungame';
+import DetailWorkshop from './WorkShop/DetailWorkshop';
+import Workshop from './WorkShop/Workshop';
+import Deparmental from "./Deparmental/Deparmental";
+import DetailCompetition from './Deparmental/DetailCompetition';
+import Exhibition from './Exibision/Exhibition';
+import DetailExhibition from './Exibision/DetailExhibition';
 import EventsPage from './EventsPage';
 
 function EventRoutes() {
@@ -28,16 +25,14 @@ function EventRoutes() {
       <Router>
         <Routes>
           <Route path="/" element={<EventsPage />} />
-          <Route path="/events" element={<CardGrid />} />
+          <Route path="/title-event" element={<CardGrid />} />
           <Route path="/detail/:title" element={<DetailPage />} />
           <Route path="/workshops" element={<Workshop />} />
           <Route path="/workshops/detail/:title" element={<DetailWorkshop />} />
-          <Route path="/competitions" element={<Competition />} />
+          <Route path="/competitions" element={<Deparmental />} />
           <Route path="/competitions/detail/:title" element={<DetailCompetition />} />
           <Route path="/exhibitions" element={<Exhibition />} />
           <Route path="/exhibitions/detail/:title" element={<DetailExhibition />} />
-          <Route path="/fungames" element={<Fungame />} />
-          <Route path="/fungames/detail/:title" element={<DetailFungame />} />
         </Routes>
       </Router>
     </div>

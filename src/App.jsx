@@ -10,18 +10,29 @@ import BackToTopButton from "./componants/BackToTop";
 import SchedulePage from "./SchedulePage/SchedulePage";
 import MainContent from "./MainContent";
 import Team from "./Team/Team";
-import SplashCursor from "./Curser/SplashCursor";
 import CardGrid from "./EventPage/CardGrid";
-import DetailPage from "./EventPage/DetailPage";
-import Workshop from "./EventPage/Workshop";
-import DetailWorkshop from "./EventPage/DetailWorkshop";
-import Competition from "./EventPage/Competition";
-import DetailCompetition from "./EventPage/DetailCompetition";
-import Exhibition from "./EventPage/Exhibition";
-import DetailExhibition from "./EventPage/DetailExhibition";
-import Fungame from "./EventPage/Fungame";
-import DetailFungame from "./EventPage/DetailFungame";
+import Workshop from "./EventPage/WorkShop/Workshop";
+import DetailWorkshop from "./EventPage/WorkShop/DetailWorkshop";
+import Exhibition from "./EventPage/Exibision/Exhibition";
+import DetailExhibition from "./EventPage/Exibision/DetailExhibition";
 import EventsPage from "./EventPage/EventsPage";
+import Deparmental from "./EventPage/Deparmental/Deparmental";
+import Esport from "./EventPage/E-sport/Esport";
+import Robotics from "./EventPage/Robotics/Robotic";
+import Texttile from "./EventPage/Deparment/Textile/Textile";
+import TextileDetails from "./EventPage/Deparment/Textile/TextileDetails";
+import CsDetails from "./EventPage/Deparment/Cs/CsDetails";
+import Cs from "./EventPage/Deparment/Cs/Cs";
+import ExtcDetails from "./EventPage/Deparment/Extc/ExtcDetails";
+import Extc from "./EventPage/Deparment/Extc/Extc";
+import Electrical from "./EventPage/Deparment/Electrical/Electrical";
+import ElectricalDetails from "./EventPage/Deparment/Electrical/ElectricalDetails";
+import Civil from "./EventPage/Deparment/Civil/Civil";
+import CivilDetails from "./EventPage/Deparment/Civil/CivilDetails";
+import Chemical from "./EventPage/Deparment/Chemical/Chemical";
+import ChemicalDetails from "./EventPage/Deparment/Chemical/ChemicalDetails";
+import Mechnical from "./EventPage/Deparment/Mechnical/Mechnical";
+import MechnicalDetails from "./EventPage/Deparment/Mechnical/MechanicalDetails";
 import './styles/loadingStyles.css';
 
 
@@ -113,18 +124,32 @@ const AppContent = () => {
       <Routes>
         <Route path="/schedule" element={<SchedulePage />} />
         <Route path="/events" element={<EventsPage />} />
-        <Route path="/events/event" element={<CardGrid />} />
-        <Route path="/events/detail/:title" element={<DetailPage />} />
+        <Route path="/events/title-event" element={<CardGrid />} />
+        <Route path="/events/title-event/e-sport" element={<Esport />} />
+        <Route path="/events/title-event/robotics" element={<Robotics/>} />
         <Route path="/events/workshops" element={<Workshop />} />
         <Route path="/events/workshops/:title" element={<DetailWorkshop />} />
-        <Route path="/events/competitions" element={<Competition />} />
-        <Route path="/events/competitions/:title" element={<DetailCompetition />} />
-        <Route path="/events/exhibitions" element={<Exhibition />} />
+        <Route path="/events/deparmental-events/" element={<Deparmental />} />
+        <Route path="/events/exhibitions/" element={<Exhibition />} />
         <Route path="/events/exhibitions/:title" element={<DetailExhibition />} />
-        <Route path="/events/fungames" element={<Fungame />} />
-        <Route path="/events/fungames/:title" element={<DetailFungame />} />
+        {/* //Deparmental */}
+        <Route path="/events/deparmental-events/textile/" element={<Texttile/>} />
+        <Route path="events/deparmental-events/textile/:title" element={<TextileDetails/>} />
+        <Route path="/events/deparmental-events/cs/" element={<Cs/>} />
+        <Route path="events/deparmental-events/cs/:title" element={<CsDetails/>} />
+        <Route path="/events/deparmental-events/entc/" element={<Extc/>} />
+        <Route path="events/deparmental-events/entc/:title" element={<ExtcDetails/>} />
+        <Route path="/events/deparmental-events/electrical/" element={<Electrical/>} />
+        <Route path="events/deparmental-events/electrical/:title" element={<ElectricalDetails/>} />
+        <Route path="/events/deparmental-events/civil/" element={<Civil/>} />
+        <Route path="events/deparmental-events/civil/:title" element={<CivilDetails/>} />
+        <Route path="/events/deparmental-events/chemical/" element={<Chemical/>} />
+        <Route path="events/deparmental-events/chemical/:title" element={<ChemicalDetails/>} />
+        <Route path="/events/deparmental-events/mechanical/" element={<Mechnical/>} />
+        <Route path="events/deparmental-events/mechanical/:title" element={<MechnicalDetails/>} />
+        
         <Route path="/team" element={<Team />} />
-        <Route path="" element={<MainContent />} />
+        <Route path="*" element={<MainContent />} /> 
       </Routes>
       <FooterVisibility />
       <BackToTopButton />

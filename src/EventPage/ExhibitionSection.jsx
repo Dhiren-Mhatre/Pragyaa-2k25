@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom'; 
-import Exhibition from './Exhibition';
+import Exhibition from './Exibision/Exhibition';
 import DetailExhibition from './DetailExhibition';
 
 const ExhibitionSection = () => {

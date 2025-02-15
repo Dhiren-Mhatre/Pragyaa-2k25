@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom'; 
-import Workshop from './Workshop';
-import DetailWorkshop from './DetailWorkshop'
+import Workshop from './WorkShop/Workshop';
+import DetailWorkshop from './WorkShop/DetailWorkshop'
 
 const WorkshopSection = () => {
     return (

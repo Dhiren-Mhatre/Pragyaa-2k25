@@ -4,7 +4,8 @@ import spon_1 from './Spon-1.jpg';
 import civilguruji from './civilguruji.png';
 import aquasis from './aquasis.png';
 import hcltech from './hcltech.png';
-
+import sharada from './sharada.jpeg'
+import mgb from './mgb.png'
 
 
 const sponsors = [
@@ -20,6 +21,12 @@ const sponsors = [
   {
     logo:hcltech,
   },
+  {
+    logo:sharada,
+  },
+  {
+    logo:mgb,
+  }
   // {
   //   name: 'Sponsor Two',
   //   logo: spon_1,

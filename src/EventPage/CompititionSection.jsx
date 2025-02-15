@@ -1,11 +1,11 @@
 import { Routes, Route } from 'react-router-dom'; 
 import DetailCompitation from './DetailCompitation';
-import Compitation from './Compitations';
+import Deparmental from './Deparmental/Deparmental';
 
 const CompitationSection = () => {
     return (
         <Routes>
-            <Route path="/" element={<Compitation />} />
+            <Route path="/" element={<Deparmental />} />
             <Route path="/title" element={<DetailCompitation />} />
         </Routes>
     );
