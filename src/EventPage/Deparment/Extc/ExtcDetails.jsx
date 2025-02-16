@@ -7,7 +7,7 @@ const ExtcDetails = () => {
   const [record, setRecord] = useState(null);
 
   useEffect(() => {
-    fetch('/Records.json')  // Ensure correct path to JSON file
+    fetch('/ELITE.json')  // Ensure correct path to JSON file
       .then((response) => {
         if (!response.ok) {
           throw new Error('Failed to fetch records');

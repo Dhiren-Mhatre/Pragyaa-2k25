@@ -1,13 +1,21 @@
 import React from 'react';
 import Card from '../../Card';
-import roboticImage from '../../../assets/robotic.jpeg';
-import iplImage from '../../../assets/ipl.jpeg';
+import roboticImage from '../../../assets/EventsImages/Float a bo(a)t.jpg';
+import iplImage from '../../../assets/EventsImages/town.jpg';
+import cad from '../../../assets/EventsImages/cad.jpg';
+import sur from '../../../assets/EventsImages/sur.jpg';
+import resume from '../../../assets/EventsImages/Bridge.jpg';
+import bridge from '../../../assets/EventsImages/Bridge.jpg';
 import { Link } from 'react-router-dom';
 
 const Civil = () => {
   const cardsData = [
-    { title: 'Robotics', image: roboticImage },
-    { title: 'E-sport', image: iplImage },
+    { title: 'Float-ABo(A)t', image: roboticImage },
+    { title: 'Town Planning', image: iplImage },
+    { title: 'Cad War', image: cad },
+    { title: 'Bridge Building', image: bridge },
+    { title: 'Surveying Workshop', image: sur },
+    { title: 'Resume Building', image: iplImage },
   ];
 
   return (

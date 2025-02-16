@@ -1,14 +1,15 @@
 import React from 'react';
 import Card from '../Card';
-import roboticImage from '../../assets/robotic.jpeg';
-import iplImage from '../../assets/ipl.jpeg';
+import picandplace from '../../assets/EventsImages/Pick & Place.jpg';
+import rcCar from '../../assets/EventsImages/RC car racing.jpg';
+import rcBoat from '../../assets/EventsImages/RC boat racing.jpg';
 import { Link } from 'react-router-dom';
 
 const Robotics = () => {
   const cardsData = [
-    { title: 'pick-n-place', image: roboticImage },
-    { title: 'rc car', image: iplImage },
-    { title: 'rc boat', image: iplImage },
+    { title: 'Pick and Place', image: picandplace },
+    { title: 'RC Car Racing', image: rcCar },
+    { title: 'RC Boat', image: rcBoat },
   ];
 
   return (

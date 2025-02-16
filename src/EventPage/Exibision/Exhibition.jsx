@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../CardGrid.css';
-import roboticImage from '../../assets/robotic.jpeg';
-import iplImage from '../../assets/ipl.jpeg';
+import jr from '../../assets/EventsImages/junior.jpg';
+import exhi from '../../assets/EventsImages/exhi.jpg';
 import Card from '../Card';
 
 const Exhibition = () => {
   const cardsData = [
-    { title: 'Junior Scientist', image: roboticImage },
-    { title: 'Project Exhibition', image: iplImage },
+    { title: 'Junior Scientist', image: jr },
+    { title: 'Project Exhibition', image: exhi },
   ];
 
   return (

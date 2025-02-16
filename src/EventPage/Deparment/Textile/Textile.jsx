@@ -1,13 +1,14 @@
 import React from 'react';
 import Card from '../../Card';
-import roboticImage from '../../../assets/robotic.jpeg';
-import iplImage from '../../../assets/ipl.jpeg';
+import roboticImage from '../../../assets/EventsImages/Style.jpg';
+import iplImage from '../../../assets/EventsImages/text.jpg';
 import { Link } from 'react-router-dom';
 
 const Textile= () => {
   const cardsData = [
-    { title: 'Robotics', image: roboticImage },
-    { title: 'E-sport', image: iplImage },
+    { title: 'Style your partner', image: roboticImage },
+    { title: 'Tex Quiz ', image: iplImage },
+    // { title: 'Tex Quiz ', image: iplImage },
   ];
 
   return (
@@ -20,7 +21,7 @@ const Textile= () => {
       {cardsData.map((card, index) => (
         <Link 
           key={card.title} 
-          to={`/events/deparmental-events/textile/${card.title}`}
+          to={`/events/title-event/robotics/${card.title}`}
         >
           <Card title={card.title} img={card.image} />
         </Link>

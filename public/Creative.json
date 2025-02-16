@@ -1,0 +1,44 @@
+[
+  {
+      "Title": "Treasure Hunt",
+      "Description": "Treasure Hunt: Decode, Discover, Conquer! Embark on an exhilarating adventure where wit, teamwork, and quick thinking lead the way! Solve mind-bending clues, navigate hidden challenges, and race against time to uncover the ultimate treasure. With each clue bringing you closer to victory, this event tests your problem-solving skills, creativity, and teamwork. Are you ready to hunt, decode, and claim the treasure? Let the adventure begin!",
+      "Prize Pool": "25000",
+      "Venue_Location": "PMC"
+  },
+  {
+      "Title": "Chess Competition",
+      "Description": "Checkmate: The Ultimate Chess Battle! Showcase your strategic brilliance and tactical mastery in this intense chess competition. Whether you're a seasoned player or a rising enthusiast, this event challenges your thinking, patience, and precision. Compete against top minds, outmaneuver your opponents, and claim the title of chess champion. Think ahead, plan your moves, and checkmate your way to victory!",
+      "Prize Pool": "5000",
+      "Venue_Location": "Gym"
+  },
+  {
+      "Title": "IPL Auction",
+      "Description": "IPL Auction: Bid, Strategize, Conquer! Step into the thrilling world of cricket strategy, where teams take on the role of franchise owners to build their dream squad. With a set budget, participants must analyze player stats, outbid rivals, and create the ultimate team to compete in simulated matches. This event tests your cricket knowledge, decision-making skills, and auction tactics. Think like a team owner, bid like a champion, and build a winning squad!",
+      "Prize Pool": "8000",
+      "Venue_Location": "PMC"
+  },
+  {
+      "Title": "Mock Placement",
+      "Description": "Mock Placement is an event designed to simulate a real-world campus recruitment process. It allows students to experience the challenges of placement drives, refine their interview skills, and understand industry expectations. The goal is to familiarize students with the recruitment process by simulating rounds such as aptitude tests, group discussions, and personal interviews. It provides hands-on experience in facing interviews while offering constructive feedback to help students improve.",
+      "Prize Pool": "",
+      "Venue_Location": "A4 Hall"
+  },
+  {
+      "Title": "Chess Programmer",
+      "Description": "A Chess Programmer is a professional who designs and develops software that plays chess or analyzes chess games. This role involves coding algorithms that allow the program to evaluate positions, calculate optimal moves, and simulate gameplay. Chess programmers often work with artificial intelligence and machine learning to improve the program's ability to mimic human-like strategy or enhance its playing strength. Their work is critical in creating chess engines, apps, and online platforms that challenge players and support chess training.",
+      "Prize Pool": "5000",
+      "Venue_Location": "A4 Hall"
+  },
+  {
+      "Title": "Data Science",
+      "Description": "Data Science is an interdisciplinary field that combines statistics, programming, and domain knowledge to extract insights from data. This event is designed for students interested in data analytics, machine learning, and artificial intelligence. Participants will work on real-world datasets, apply data science techniques, and solve complex problems. Whether you're a beginner or an experienced data enthusiast, this event will challenge your analytical and problem-solving skills.",
+      "Prize Pool": "5000",
+      "Venue_Location": "EXTC Department"
+  },
+  {
+      "Title": "Jr. Scientist",
+      "Description": "A Jr. Scientist is an entry-level position in scientific research or development, typically held by individuals with a relevant academic background (such as a degree in science or engineering). Jr. Scientists assist in conducting experiments, collecting and analyzing data, and supporting senior researchers or scientists in various projects. They may work in laboratories, research institutions, or industries like pharmaceuticals, biotechnology, or environmental science, contributing to scientific discovery and innovation.",
+      "Prize Pool": "10000",
+      "Venue_Location": "AB4"
+  }
+]

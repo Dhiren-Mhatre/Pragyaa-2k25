@@ -1,24 +1,25 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../CardGrid.css';
-import MegaQuiz from '../../assets/Mega Quiz.jpeg';
-import iplImage from '../../assets/ipl.jpeg';
-import treasureImage from '../../assets/treasure.jpeg';
-import sharkImage from '../../assets/shark.jpeg';
-import mockImage from '../../assets/mock.png';
-import jammImage from '../../assets/jamm.jpeg';
+import MegaQuiz from '../../assets/EventsImages/text.jpg';
+import iplImage from '../../assets/EventsImages/extc.jpg';
+import treasureImage from '../../assets/EventsImages/electrical.jpg';
+import sharkImage from '../../assets/EventsImages/chemical.jpg';
+import mockImage from '../../assets/EventsImages/mech.jpg';
+import jammImage from '../../assets/EventsImages/civil.jpg';
+import CSE from '../../assets/EventsImages/computer.jpg';
 import Card from '../Card';
 
 
 const Deparmental = () => {
   const cardsData = [
+    // { title: 'computer & it', image: CSE },
+    { title: 'civil', image: jammImage },
     { title: 'textile', image: MegaQuiz },
     { title: 'entc', image: iplImage },
     { title: 'electrical', image: treasureImage },
     { title: 'chemical', image: sharkImage },
     { title: 'mechanical', image: mockImage },
-    { title: 'civil', image: jammImage },
-    { title: 'computer&& it', image: jammImage },
   ];
 
   return (

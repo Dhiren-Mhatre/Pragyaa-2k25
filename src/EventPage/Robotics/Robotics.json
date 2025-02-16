@@ -1,0 +1,20 @@
+[
+  {
+      "Title": "RC-Car-Racing",
+      "Description": "The RC Car Racing Competition is a high-speed event designed to test the engineering skills, control, and strategy of participants. Teams must design and operate a remote-controlled (RC) car to complete laps on a challenging track in the shortest possible time.",
+      "Prize_Pool": "20000",
+      "Venue_Location": "Tennis Court"
+  },
+  {
+      "Title": "RC Boat",
+      "Description": "The RC Boat Racing Competition is an exciting event that challenges participants to design and operate remote-controlled (RC) boats to complete laps on a water track in the shortest possible time.",
+      "Prize_Pool": "20000",
+      "Venue_Location": "PMC"
+  },
+  {
+      "Title": "Pick and Place",
+      "Description": "The Pick and Place Competition is a test of precision, efficiency, and design innovation. Teams must build a manually or autonomously controlled robot capable of picking up objects and placing them in designated zones within a given time.",
+      "Prize_Pool": "20000",
+      "Venue_Location": "PMC"
+  }
+]

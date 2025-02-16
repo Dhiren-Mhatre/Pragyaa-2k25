@@ -1,13 +1,13 @@
 import React from 'react';
 import Card from '../../Card';
-import roboticImage from '../../../assets/robotic.jpeg';
-import iplImage from '../../../assets/ipl.jpeg';
+import roboticImage from '../../../assets/EventsImages/contra.jpg';
+// import iplImage from '../../../assets/ipl.jpeg';
 import { Link } from 'react-router-dom';
 
 const Mechnical = () => {
   const cardsData = [
-    { title: 'Robotics', image: roboticImage },
-    { title: 'E-sport', image: iplImage },
+    { title: 'Contraption Cascade', image: roboticImage },
+    // { title: 'E-sport', image: iplImage },
   ];
 
   return (

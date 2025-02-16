@@ -1,13 +1,13 @@
 import React from 'react';
 import Card from '../../Card';
-import roboticImage from '../../../assets/robotic.jpeg';
-import iplImage from '../../../assets/ipl.jpeg';
+import roboticImage from '../../../assets/EventsImages/paper.jpg';
+import iplImage from '../../../assets/EventsImages/tech.jpg';
 import { Link } from 'react-router-dom';
 
 const Extc = () => {
   const cardsData = [
-    { title: 'Robotics', image: roboticImage },
-    { title: 'E-sport', image: iplImage },
+    { title: 'Paper Presentation', image: roboticImage },
+    { title: 'Tech Quest ', image: iplImage },
   ];
 
   return (

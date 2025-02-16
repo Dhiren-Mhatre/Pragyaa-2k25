@@ -7,16 +7,14 @@ import iplImage from '../../assets/ipl.jpeg';
 import treasureImage from '../../assets/treasure.jpeg';
 import sharkImage from '../../assets/shark.jpeg';
 import mockImage from '../../assets/mock.png';
-import jaam from '../../assets/jamm.jpeg';
-import roadshow from '../../assets/roadshow.jpeg';
 
 const Workshop = () => {
   const cardsData = [
-    { title: 'data-science', image: iplImage },
+    { title: 'Data Science', image: iplImage },
     { title: 'CAD AND CATIA ', image: mockImage },
     { title: 'CV/Resume', image: sharkImage },
-    { title: 'surveying-workshop', image: roboticImage },
-    { title: 'python for AI/ML', image: treasureImage },
+    { title: 'Surveying ', image: roboticImage },
+    { title: 'Python for AIML', image: treasureImage },
    
   ];
 

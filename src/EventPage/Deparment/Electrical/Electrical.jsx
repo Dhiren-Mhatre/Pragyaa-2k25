@@ -1,13 +1,13 @@
 import React from 'react';
 import Card from '../../Card';
-import roboticImage from '../../../assets/robotic.jpeg';
-import iplImage from '../../../assets/ipl.jpeg';
+import roboticImage from '../../../assets/EventsImages/voltage.jpg';
+import iplImage from '../../../assets/EventsImages/wire.jpg';
 import { Link } from 'react-router-dom';
 
 const Electrical = () => {
   const cardsData = [
-    { title: 'Robotics', image: roboticImage },
-    { title: 'E-sport', image: iplImage },
+    { title: 'Voltage Voyage', image: roboticImage },
+    { title: 'Wire Whisper', image: iplImage },
   ];
 
   return (

@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const Robotics = () => {
   const cardsData = [
-    { title: 'Robotics', image: roboticImage },
+    { title: 'Codeclash', image: roboticImage },
     { title: 'E-sport', image: iplImage },
   ];
 

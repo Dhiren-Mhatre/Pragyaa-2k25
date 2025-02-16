@@ -1,15 +1,13 @@
 import React from 'react';
 import Card from './Card';
 import roboticImage from '../assets/robotic.jpeg';
-import iplImage from '../assets/ipl.jpeg';
+import iplImage from '../assets/EventsImages/Esport.jpg';
 import { Link } from 'react-router-dom';
 
 const CardGrid = () => {
   const cardsData = [
     { title: 'robotics', image: roboticImage },
     { title: 'e-sport', image: iplImage },
-    
-
   ];
 
   return (
