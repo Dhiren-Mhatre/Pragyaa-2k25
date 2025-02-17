@@ -1,0 +1,18 @@
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-50% - 1rem));
+  }
+}body {
+  --animation-duration: 40s;
+  --animation-direction: forwards;
+  background: transparent;
+  color: rgb(144, 129, 129);
+  /* margin-left: 1rem; */
+}
+
+.animate-scroll {
+  animation: scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite;
+}
