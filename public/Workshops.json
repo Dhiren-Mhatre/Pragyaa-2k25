@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [
   {
     "Title": "Data Science",
@@ -31,3 +32,57 @@
   }
   
 ]
+=======
+[
+    {
+      "Title": "CAD & CATIA Workshop",
+      "Description": "A CAD & CATIA Workshop provides hands-on training in Computer-Aided Design (CAD) and CATIA software, widely used for designing, modeling, and engineering solutions. Participants learn key features like 3D modeling, drafting, assembly design, and simulation, gaining practical skills for industrial applications. The workshop is ideal for students, engineers, and design enthusiasts looking to enhance their technical expertise.",
+      "Engg Domains": "Mechanical/Production/Civil",
+      "Venue_Location": "A1 Complex/Production Dept"
+    },
+    {
+      "Title": "Artificial Intelligence and Machine Learning with Blockchain",
+      "Description": "This workshop offers a unique opportunity to explore the intersection of Artificial Intelligence (AI), Machine Learning (ML), and Blockchain technology. It covers foundational concepts, practical applications, and emerging trends in AI/ML and Blockchain, enabling participants to understand and build innovative solutions that leverage the strengths of both domains.",
+      "Engg Domains": "CSE/IT/ECE",
+      "Venue_Location": "A3/A4 Complex"
+    },
+    {
+      "Title": "Workshop on Electric Vehicles",
+      "Description": "An initiative designed to provide a comprehensive understanding of the rapidly growing EV industry. This workshop explores technological advancements, environmental benefits, and career opportunities in the electric vehicle ecosystem. Participants will gain hands-on insights into the fundamentals of EVs, including battery technologies, motor systems, energy management, and charging infrastructure.",
+      "Engg Domains": "Electrical/Mechanical",
+      "Venue_Location": "A3/A4 Complex"
+    },
+
+    {
+      "Title": "Electropath",
+      "Description": "This workshop provides a detailed roadmap for Electronics and Telecommunication students across all academic years. Featuring expert speakers, it covers essential academic and technical milestones, emerging technologies like VLSI and Embedded Systems, and offers strategic guidance for internships, placements, and career development.",
+      "Engg Domains": "ECE/EEE/Instrumentation",
+      "Venue_Location": "A4 Hall/Seminar Hall"
+    },
+    {
+      "Title": "Workshop on Python Programming",
+      "Description": "A comprehensive workshop designed to introduce participants to the fundamentals of Python programming. The session will cover basic syntax, data structures, functions, and real-world applications, providing hands-on practice for beginners and intermediate programmers.",
+      "Engg Domains": "CSE/IT/Any",
+      "Venue_Location": "To be announced"
+    },
+    {
+      "Title": "Workshop on Web Development",
+      "Description": "This workshop aims to equip participants with essential web development skills, covering front-end and back-end technologies. Topics include HTML, CSS, JavaScript, and frameworks like React or Angular, providing hands-on experience in building and deploying websites.",
+      "Engg Domains": "CSE/IT",
+      "Venue_Location": "To be announced"
+    },
+    {
+      "Title": "Workshop on Verilog HDL",
+      "Description": "A technical workshop focusing on Verilog HDL, a hardware description language used for digital system design and verification. Participants will learn the basics of Verilog, simulation techniques, and practical applications in FPGA programming.",
+      "Engg Domains": "ECE/EEE",
+      "Venue_Location": "To be announced"
+    },
+    {
+      "Title": "Workshop on Business Analytics",
+      "Description": "This workshop introduces participants to the principles and tools of Business Analytics, focusing on data analysis, visualization, and interpretation. It covers tools like Excel, Python, and Power BI to provide insights for data-driven decision-making.",
+      "Engg Domains": "CSE/IT/Management",
+      "Venue_Location": "To be announced"
+    }
+  ]
+  
+>>>>>>> upstream/master

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../CardGrid.css';
@@ -44,3 +45,50 @@ const Deparmental = () => {
 };
 
 export default Deparmental;
+=======
+import React from 'react';
+import { Link } from 'react-router-dom';
+import '../CardGrid.css';
+import MegaQuiz from '../../assets/Mega Quiz.jpeg';
+import iplImage from '../../assets/ipl.jpeg';
+import treasureImage from '../../assets/treasure.jpeg';
+import sharkImage from '../../assets/shark.jpeg';
+import mockImage from '../../assets/mock.png';
+import jammImage from '../../assets/jamm.jpeg';
+import Card from '../Card';
+
+
+const Deparmental = () => {
+  const cardsData = [
+    { title: 'textile', image: MegaQuiz },
+    { title: 'entc', image: iplImage },
+    { title: 'electrical', image: treasureImage },
+    { title: 'chemical', image: sharkImage },
+    { title: 'mechanical', image: mockImage },
+    { title: 'civil', image: jammImage },
+    { title: 'computer&& it', image: jammImage },
+  ];
+
+  return (
+    <>
+      <h1 className="text-white text-4xl font-semibold mb-8 text-center p-8">
+        Competition
+      </h1>
+      <div className='flex justify-center items-center'>
+        <div className="card-grid">
+          {cardsData.map((card, index) => (
+            <Link
+              key={card.title}
+              to={`/events/deparmental-events/${card.title}`}
+            >
+              <Card title={card.title} img={card.image} />
+            </Link>
+          ))}
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Deparmental;
+>>>>>>> upstream/master

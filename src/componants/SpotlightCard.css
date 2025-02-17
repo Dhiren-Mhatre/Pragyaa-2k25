@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .card-spotlight {
     position: relative;
     overflow: hidden;
@@ -15,4 +16,23 @@
     pointer-events: none;
     transition: top 0.1s ease, left 0.1s ease;
   }
+=======
+.card-spotlight {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .card-spotlight::before {
+    content: "";
+    position: absolute;
+    top: var(--mouse-y);
+    left: var(--mouse-x);
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, var(--spotlight-color) 25%, transparent 50%);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: top 0.1s ease, left 0.1s ease;
+  }
+>>>>>>> upstream/master
   
