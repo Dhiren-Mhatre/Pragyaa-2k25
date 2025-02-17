@@ -1,0 +1,20 @@
+[
+    {
+        "Title": "Tex Quiz",
+        "Description": "Textile Quiz Competition: Weave Your Knowledge! Put your textile expertise to the test in our Textile Quiz Competition! Whether you're a student, professional, or textile enthusiast, this competition is your chance to showcase your knowledge, compete with the best, and win exciting prizes. Are you ready to unravel the world of textiles? Join us and prove your expertise!",
+        "Prize_Pool": "5000",
+        "Venue_Location": "Textile Department"
+    },
+    {
+        "Title": "Style Your Partner",
+        "Description": "Unleash your creativity in Style Your Partner, a unique fashion challenge where teams transform textiles into stunning outfits! With a mix of fabric, accessories, and design skills, participants will craft stylish looks for their partners within a set time. Whether it's traditional elegance or modern trends, this event tests your fashion sense, innovation, and styling abilities. Think fashion, think creativity—are you ready to style and shine?",
+        "Prize_Pool": "15000",
+        "Venue_Location": "Textile Department"
+    },
+    {
+        "Title": "Draw Your Design",
+        "Description": "Let your imagination flow in Draw Your Design, a creative competition where aspiring designers bring their ideas to life on paper! Whether it’s a futuristic outfit, a traditional masterpiece, or an avant-garde textile concept, this event challenges participants to sketch unique and innovative fashion or textile designs. Showcase your artistic skills, attention to detail, and design aesthetics as you compete to impress the judges. If you can dream it, you can draw it! Join us and create your masterpiece.",
+        "Prize_Pool": "5000",
+        "Venue_Location": "Textile Department"
+    }
+]

@@ -1,0 +1,14 @@
+[
+    {
+        "Title": "Voltage Voyage",
+        "Description": "Navigate the Power of Electricity! Embark on an electrifying journey with Voltage Voyage, a thrilling competition designed for electrical engineering enthusiasts! This event challenges participants with a mix of circuit design, troubleshooting, problem-solving, and electrical trivia. Test your technical knowledge, practical skills, and teamwork as you navigate through exciting rounds to emerge as the ultimate electrical champion. Charge up your skills, spark innovation, and set sail on this electrifying voyage! Are you ready?",
+        "Prize Pool": "5000",
+        "Venue_Location": "Electrical Department"
+    },
+    {
+        "Title": "Wire Whispering",
+        "Description": "Explore the metal wire loop and try to find the solution! This event tests your precision, patience, and problem-solving skills as you navigate a challenging wire loop. Can you complete the circuit without breaking the connection? Accept the challenge and prove your steady hands and sharp focus!",
+        "Prize Pool": "5000",
+        "Venue_Location": "Electrical Department"
+    }
+]

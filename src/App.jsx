@@ -34,6 +34,13 @@ import ChemicalDetails from "./EventPage/Deparment/Chemical/ChemicalDetails";
 import Mechnical from "./EventPage/Deparment/Mechnical/Mechnical";
 import MechnicalDetails from "./EventPage/Deparment/Mechnical/MechanicalDetails";
 import './styles/loadingStyles.css';
+<<<<<<< HEAD
+import ESportDetails from "./EventPage/E-sport/E-SportDetails"
+import RoboticsDetails from "./EventPage/Robotics/RoboticsDeatils";
+import Other from "./EventPage/otherEvents/Other"
+import OtherDetails from "./EventPage/otherEvents/OtherDeatails"
+=======
+>>>>>>> upstream/master
 
 
 
@@ -125,8 +132,18 @@ const AppContent = () => {
         <Route path="/schedule" element={<SchedulePage />} />
         <Route path="/events" element={<EventsPage />} />
         <Route path="/events/title-event" element={<CardGrid />} />
+<<<<<<< HEAD
+        <Route path="/events/title-event/others" element={<Other />} />
+        <Route path="/events/title-event/others/:title" element={<OtherDetails />} />
+        
+        <Route path="/events/title-event/e-sport" element={<Esport />} />
+        <Route path="/events/title-event/e-sport/:title" element={<ESportDetails />} />
+        <Route path="/events/title-event/robotics" element={<Robotics/>} />
+        <Route path="/events/title-event/robotics/:title" element={<RoboticsDetails/>}/>
+=======
         <Route path="/events/title-event/e-sport" element={<Esport />} />
         <Route path="/events/title-event/robotics" element={<Robotics/>} />
+>>>>>>> upstream/master
         <Route path="/events/workshops" element={<Workshop />} />
         <Route path="/events/workshops/:title" element={<DetailWorkshop />} />
         <Route path="/events/deparmental-events/" element={<Deparmental />} />
@@ -147,7 +164,10 @@ const AppContent = () => {
         <Route path="events/deparmental-events/chemical/:title" element={<ChemicalDetails/>} />
         <Route path="/events/deparmental-events/mechanical/" element={<Mechnical/>} />
         <Route path="events/deparmental-events/mechanical/:title" element={<MechnicalDetails/>} />
+<<<<<<< HEAD
+=======
         
+>>>>>>> upstream/master
         <Route path="/team" element={<Team />} />
         <Route path="*" element={<MainContent />} /> 
       </Routes>

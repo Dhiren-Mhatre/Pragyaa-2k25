@@ -9,6 +9,11 @@
   --animation-duration: 40s;
   --animation-direction: forwards;
   background: transparent;
+<<<<<<< HEAD
+  color: rgb(144, 129, 129);
+  /* margin-left: 1rem; */
+=======
+>>>>>>> upstream/master
 }
 
 .animate-scroll {

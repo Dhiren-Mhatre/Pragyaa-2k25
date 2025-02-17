@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react'
 import Hero from '../../componants/Hero/Hero';
 
@@ -11,3 +12,18 @@ const Home = () => {
 }
 
 export default Home;
+=======
+import React from 'react'
+import Hero from '../../componants/Hero/Hero';
+
+const Home = () => {
+  return (
+    <div>
+      <Hero />
+      {/* Other Sections */}
+    </div>
+  )
+}
+
+export default Home;
+>>>>>>> upstream/master

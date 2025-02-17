@@ -1,0 +1,14 @@
+[
+    {
+        "Title": "Tech Quest",
+        "Description": "The Digital Electronics Treasure Hunt is an exciting event comprising three competitive rounds, designed to test participants' problem-solving abilities, technical knowledge, and teamwork skills in a fun and engaging environment.",
+        "Prize_Pool": "5000",
+        "Venue_Location": "EXTC Department"
+    },
+    {
+        "Title": "Paper Presentation",
+        "Description": "Showcase Your Innovation! Step into the spotlight and present your groundbreaking ideas at Technical Paper Presentation, where knowledge meets innovation! This event provides a platform for students and researchers to share their insights, research findings, and technological advancements with a panel of experts. Whether it's engineering, science, or emerging technologies, this is your chance to demonstrate your expertise, enhance your presentation skills, and engage in thought-provoking discussions. Innovate, Present, Inspire—Are you ready to make an impact?",
+        "Prize_Pool": "30000",
+        "Venue_Location": "A4 Hall"
+    }
+]
